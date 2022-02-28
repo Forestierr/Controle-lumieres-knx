@@ -1,0 +1,405 @@
+html, body {
+    margin: 0;
+    padding: 0;
+
+    font: 'San Francisco', Helvetica, Arial, san-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+
+
+
+
+.background {
+    filter: blur(50px);
+}
+
+.wave {
+    opacity: .1;
+    background: #3fada8;
+    width: 90vw;
+    height: 90vh;
+
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 30%;
+    animation: drift 7s infinite linear;
+}
+
+.wave.-five {
+    animation: drift 9s infinite linear;
+    background: #3fada8;
+    left: 0;
+}
+
+.wave.-for {
+    animation: drift 9s infinite linear;
+    top: 70%;
+    left: -50%;
+    background: #77A1D3;
+}
+
+.wave.-three {
+    top: -50%;
+    left: 20%;
+    animation: drift 10s infinite linear;
+    background: #3fada8;
+}
+
+.wave.-two {
+    left: 50%;
+
+    animation: drift 12s infinite linear;
+    opacity: .2;
+    background: #77A1D3;
+
+}
+
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.all {
+    width: auto;
+    height: auto;
+
+    top: 100px;
+
+    position: relative;
+}
+
+.terminal .border_screen .clavier {
+    position: relative;
+}
+
+.terminal {
+    width: 620px;
+    height: 300px;
+
+    top: 80px;
+    left: 350px;
+
+    transform: skewY(10deg);
+    border-radius: 20px;
+    background: linear-gradient(to top left, rgba(44, 62, 80, 0.5), rgba(189, 195, 199, 0.5));
+    position: relative;
+
+    animation: grandir 2s;
+}
+
+@keyframes grandir {
+    from {
+        height: 30px;
+    }
+}
+
+.entete {
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+    position: absolute;
+}
+
+.entete p {
+    color: #fff;
+    font-size: 20px;
+    top: -15px;
+    position: relative;
+    animation-delay: 1s;
+    animation: appear 1s;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        font-size: 0px;
+    }
+}
+
+.red, .jaune, .vert {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    animation-delay: 2s;
+    animation: color-appear 0.5s;
+
+    z-index: 2;
+    position: fixed;
+}
+
+.red:hover, .jaune:hover, .vert:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.red {
+    margin: 7px;
+    left: 5px;
+    background: #F00;
+}
+
+
+.jaune {
+    margin: 7px;
+    left: 30px;
+    background: #fcb021;
+}
+
+.vert {
+    margin: 7px;
+    left: 55px;
+    background: #0F0;
+    cursor: help;
+}
+
+@keyframes color-appear {
+    from {
+        opicity: 0;
+        width: 0px;
+        height: 0px;
+    }
+}
+
+.error {
+    background: none;
+    color: #d00;
+
+    font-size: 20px;
+
+    font-weight: bolder;
+}
+
+
+.text {
+    color: #FFF;
+
+    font-size: 15px;
+
+    top: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+
+.text :nth-child(1),
+.text :nth-child(2) {
+    margin-top: 20px;
+    animation: text-appear 2s;
+}
+
+.text :nth-child(3) {
+    animation: text-appear 2.5s;
+}
+
+.text :nth-child(4),
+.text :nth-child(5) {
+    animation: text-appear 3s;
+}
+
+@keyframes text-appear {
+    from {
+        opacity:0;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    to {
+        opacity:1;
+    }
+}
+
+
+
+.border_screen {
+    width: 725px;
+    height: 400px;
+
+    top: -270px;
+    left: 300px;
+
+    transform: skewY(10deg);
+
+    background: rgba(0,0,0,0.2);
+
+    box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+
+    position: relative;
+    z-index: -1;
+}
+
+.border_screen:before {
+    content:"";
+    position:absolute;
+    z-index: 0;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    padding: 7px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #0F2027, #2C5364);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.clavier {
+    width: 725px;
+    height: 200px;
+
+    top: -250px;
+    left: 180px;
+
+    background: rgba(0,0,0,0.2);
+    transform: skew(-50deg, 10deg);
+    border-radius: 20px;
+    box-shadow: 20px -10px 10px rgba(0, 0, 0, 0.5);
+
+    position: relative;
+
+    z-index: -1;
+}
+
+.clavier:before {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    padding: 7px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #0F2027, #2C5364);
+    -webkit-mask:
+     linear-gradient(#fff 0 0) content-box,
+     linear-gradient(#fff 0 0);
+          mask:
+     linear-gradient(#fff 0 0) content-box,
+     linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.touche {
+    width: 600px;
+    height: 15px;
+    border: 4px solid transparent;
+
+    position: relative;
+}
+
+.touche:before {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    padding: 9px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #0F2027, #2C5364);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.touche:hover:before {
+    animation: change-bg .5s alternate ease-out forwards;
+}
+
+@keyframes change-bg {
+    from{
+        opacity: 1;
+        background: linear-gradient(to right, #0F2027, #2C5364);
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    to {
+        opacity: 1;
+        background: linear-gradient(to right, #141E30, #243B55);
+    }
+
+}
+
+.clavier :nth-child(1) {
+    top: 30px;
+    left: 40px;
+}
+
+.clavier :nth-child(2) {
+    top: 40px;
+    left: 40px;
+    width: 350px;
+}
+.clavier :nth-child(3) {
+    top: 17px;
+    left: 440px;
+    width: 200px;
+}
+
+.clavier :nth-child(4) {
+    top: 30px;
+    left: 40px;
+    width: 50px;
+}
+.clavier :nth-child(5) {
+    top: 7px;
+    left: 120px;
+    width: 440px;
+}
+.clavier :nth-child(6) {
+    top: -17px;
+    left: 590px;
+    width: 50px;
+}
+
+.clavier :nth-child(7) {
+    top: -7px;
+    left: 40px;
+    width: 600px;
+}
+
+
+
+
+
+

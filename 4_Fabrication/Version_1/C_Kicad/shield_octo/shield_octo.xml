@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\FIX-4\Desktop\Github\controle-des-lumieres-knx\4_Fabrication\Version_1\C_Kicad\shield_octo\shield_octo.sch</source>
+    <date>21.12.2021 07:59:27</date>
+    <tool>Eeschema (5.1.10)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>shield_octo</title>
+        <company>Centre de formation, Force Aérienne, Base Aérinne, PAY</company>
+        <rev>1</rev>
+        <date>2021-11-30</date>
+        <source>shield_octo.sch</source>
+        <comment number="1" value="Robin Forestier"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="K1">
+      <value>Raspberry_Pi_2_3</value>
+      <footprint>Connector_PinSocket_2.54mm_ELO:PinSocket_2x20_P2.54mm_Vertical</footprint>
+      <datasheet>https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf</datasheet>
+      <fields>
+        <field name="MPM">801-87-036-10-001101</field>
+        <field name="Manufacturer">PRECI-DIP</field>
+        <field name="PU">2.61</field>
+        <field name="SPN">2839817</field>
+        <field name="Supplier">Farnell</field>
+        <field name="ValMod">~</field>
+      </fields>
+      <libsource lib="archive" part="Connector_Raspberry_Pi_2_3" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61A6166C</tstamp>
+    </comp>
+    <comp ref="K2">
+      <value>ASSR-1218</value>
+      <footprint>Package_SO:SO-4_4.4x4.3mm_P2.54mm</footprint>
+      <datasheet>https://docs.broadcom.com/docs/AV02-0173EN</datasheet>
+      <fields>
+        <field name="MPM">ASSR-1218-003E</field>
+        <field name="Manufacturer">Broadcom</field>
+        <field name="PU">1.75</field>
+        <field name="SPN">1708432</field>
+        <field name="Supplier">Farnell</field>
+        <field name="ValMod">60V, 25mA</field>
+      </fields>
+      <libsource lib="archive" part="Relay_SolidState_ASSR-1218" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61A64B4E</tstamp>
+    </comp>
+    <comp ref="K3">
+      <value>ASSR-1218</value>
+      <footprint>Package_SO:SO-4_4.4x4.3mm_P2.54mm</footprint>
+      <datasheet>https://docs.broadcom.com/docs/AV02-0173EN</datasheet>
+      <fields>
+        <field name="MPM">ASSR-1218-003E</field>
+        <field name="Manufacturer">Broadcom</field>
+        <field name="PU">1.75</field>
+        <field name="SPN">1708432</field>
+        <field name="Supplier">Farnell</field>
+        <field name="ValMod">60V, 25mA</field>
+      </fields>
+      <libsource lib="archive" part="Relay_SolidState_ASSR-1218" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61A68F1B</tstamp>
+    </comp>
+    <comp ref="K4">
+      <value>ASSR-1218</value>
+      <footprint>Package_SO:SO-4_4.4x4.3mm_P2.54mm</footprint>
+      <datasheet>https://docs.broadcom.com/docs/AV02-0173EN</datasheet>
+      <fields>
+        <field name="MPM">ASSR-1218-003E</field>
+        <field name="Manufacturer">Broadcom</field>
+        <field name="PU">1.75</field>
+        <field name="SPN">1708432</field>
+        <field name="Supplier">Farnell</field>
+        <field name="ValMod">60V, 25mA</field>
+      </fields>
+      <libsource lib="archive" part="Relay_SolidState_ASSR-1218" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61A76C65</tstamp>
+    </comp>
+    <comp ref="K5">
+      <value>ASSR-1218</value>
+      <footprint>Package_SO:SO-4_4.4x4.3mm_P2.54mm</footprint>
+      <datasheet>https://docs.broadcom.com/docs/AV02-0173EN</datasheet>
+      <fields>
+        <field name="MPM">ASSR-1218-003E</field>
+        <field name="Manufacturer">Broadcom</field>
+        <field name="PU">1.75</field>
+        <field name="SPN">1708432</field>
+        <field name="Supplier">Farnell</field>
+        <field name="ValMod">60V, 25mA</field>
+      </fields>
+      <libsource lib="archive" part="Relay_SolidState_ASSR-1218" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61A7A5F1</tstamp>
+    </comp>
+    <comp ref="K6">
+      <value>ASSR-1218</value>
+      <footprint>Package_SO:SO-4_4.4x4.3mm_P2.54mm</footprint>
+      <datasheet>https://docs.broadcom.com/docs/AV02-0173EN</datasheet>
+      <fields>
+        <field name="MPM">ASSR-1218-003E</field>
+        <field name="Manufacturer">Broadcom</field>
+        <field name="PU">1.75</field>
+        <field name="SPN">1708432</field>
+        <field name="Supplier">Farnell</field>
+        <field name="ValMod">60V, 25mA</field>
+      </fields>
+      <libsource lib="archive" part="Relay_SolidState_ASSR-1218" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61A7A5F7</tstamp>
+    </comp>
+    <comp ref="K7">
+      <value>ASSR-1218</value>
+      <footprint>Package_SO:SO-4_4.4x4.3mm_P2.54mm</footprint>
+      <datasheet>https://docs.broadcom.com/docs/AV02-0173EN</datasheet>
+      <fields>
+        <field name="MPM">ASSR-1218-003E</field>
+        <field name="Manufacturer">Broadcom</field>
+        <field name="PU">1.75</field>
+        <field name="SPN">1708432</field>
+        <field name="Supplier">Farnell</field>
+        <field name="ValMod">60V, 25mA</field>
+      </fields>
+      <libsource lib="archive" part="Relay_SolidState_ASSR-1218" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61A7A5FD</tstamp>
+    </comp>
+    <comp ref="K8">
+      <value>ASSR-1218</value>
+      <footprint>Package_SO:SO-4_4.4x4.3mm_P2.54mm</footprint>
+      <datasheet>https://docs.broadcom.com/docs/AV02-0173EN</datasheet>
+      <fields>
+        <field name="MPM">ASSR-1218-003E</field>
+        <field name="Manufacturer">Broadcom</field>
+        <field name="PU">1.75</field>
+        <field name="SPN">1708432</field>
+        <field name="Supplier">Farnell</field>
+        <field name="ValMod">60V, 25mA</field>
+      </fields>
+      <libsource lib="archive" part="Relay_SolidState_ASSR-1218" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61A83A7E</tstamp>
+    </comp>
+    <comp ref="K10">
+      <value>ASSR-1218</value>
+      <footprint>Package_SO:SO-4_4.4x4.3mm_P2.54mm</footprint>
+      <datasheet>https://docs.broadcom.com/docs/AV02-0173EN</datasheet>
+      <fields>
+        <field name="MPM">ASSR-1218-003E</field>
+        <field name="Manufacturer">Broadcom</field>
+        <field name="PU">1.75</field>
+        <field name="SPN">1708432</field>
+        <field name="Supplier">Farnell</field>
+        <field name="ValMod">60V, 25mA</field>
+      </fields>
+      <libsource lib="archive" part="Relay_SolidState_ASSR-1218" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61A83A8A</tstamp>
+    </comp>
+    <comp ref="K11">
+      <value>ASSR-1218</value>
+      <footprint>Package_SO:SO-4_4.4x4.3mm_P2.54mm</footprint>
+      <datasheet>https://docs.broadcom.com/docs/AV02-0173EN</datasheet>
+      <fields>
+        <field name="MPM">ASSR-1218-003E</field>
+        <field name="Manufacturer">Broadcom</field>
+        <field name="PU">1.75</field>
+        <field name="SPN">1708432</field>
+        <field name="Supplier">Farnell</field>
+        <field name="ValMod">60V, 25mA</field>
+      </fields>
+      <libsource lib="archive" part="Relay_SolidState_ASSR-1218" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61A83A90</tstamp>
+    </comp>
+    <comp ref="K12">
+      <value>ASSR-1218</value>
+      <footprint>Package_SO:SO-4_4.4x4.3mm_P2.54mm</footprint>
+      <datasheet>https://docs.broadcom.com/docs/AV02-0173EN</datasheet>
+      <fields>
+        <field name="MPM">ASSR-1218-003E</field>
+        <field name="Manufacturer">Broadcom</field>
+        <field name="PU">1.75</field>
+        <field name="SPN">1708432</field>
+        <field name="Supplier">Farnell</field>
+        <field name="ValMod">60V, 25mA</field>
+      </fields>
+      <libsource lib="archive" part="Relay_SolidState_ASSR-1218" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61A83A96</tstamp>
+    </comp>
+    <comp ref="K13">
+      <value>ASSR-1218</value>
+      <footprint>Package_SO:SO-4_4.4x4.3mm_P2.54mm</footprint>
+      <datasheet>https://docs.broadcom.com/docs/AV02-0173EN</datasheet>
+      <fields>
+        <field name="MPM">ASSR-1218-003E</field>
+        <field name="Manufacturer">Broadcom</field>
+        <field name="PU">1.75</field>
+        <field name="SPN">1708432</field>
+        <field name="Supplier">Farnell</field>
+        <field name="ValMod">60V, 25mA</field>
+      </fields>
+      <libsource lib="archive" part="Relay_SolidState_ASSR-1218" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61A83A9C</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>470R</value>
+      <footprint>Resistor_SMD_ELO:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="archive" part="Device_R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61AC765C</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>MountingHole_ELO:MountingHole_2.7mm_Pad</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPM">~</field>
+        <field name="Manufacturer">~</field>
+        <field name="PU">~</field>
+        <field name="SPN">~</field>
+        <field name="Supplier">~</field>
+        <field name="ValMod">M2.5</field>
+      </fields>
+      <libsource lib="archive" part="Mechanical_MountingHole" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61ADE137</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>MountingHole_ELO:MountingHole_2.7mm_Pad</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPM">~</field>
+        <field name="Manufacturer">~</field>
+        <field name="PU">~</field>
+        <field name="SPN">~</field>
+        <field name="Supplier">~</field>
+        <field name="ValMod">M2.5</field>
+      </fields>
+      <libsource lib="archive" part="Mechanical_MountingHole" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61ADF325</tstamp>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole</value>
+      <footprint>MountingHole_ELO:MountingHole_2.7mm_Pad</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPM">~</field>
+        <field name="Manufacturer">~</field>
+        <field name="PU">~</field>
+        <field name="SPN">~</field>
+        <field name="Supplier">~</field>
+        <field name="ValMod">M2.5</field>
+      </fields>
+      <libsource lib="archive" part="Mechanical_MountingHole" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61AE1A81</tstamp>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole</value>
+      <footprint>MountingHole_ELO:MountingHole_2.7mm_Pad</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPM">~</field>
+        <field name="Manufacturer">~</field>
+        <field name="PU">~</field>
+        <field name="SPN">~</field>
+        <field name="Supplier">~</field>
+        <field name="ValMod">M2.5</field>
+      </fields>
+      <libsource lib="archive" part="Mechanical_MountingHole" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61AE1A87</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>470R</value>
+      <footprint>Resistor_SMD_ELO:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="archive" part="Device_R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61AE3032</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>470R</value>
+      <footprint>Resistor_SMD_ELO:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="archive" part="Device_R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61AE62A9</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>470R</value>
+      <footprint>Resistor_SMD_ELO:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="archive" part="Device_R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61AE69FB</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>470R</value>
+      <footprint>Resistor_SMD_ELO:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="archive" part="Device_R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61AE70A9</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>470R</value>
+      <footprint>Resistor_SMD_ELO:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="archive" part="Device_R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61AE78AA</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>470R</value>
+      <footprint>Resistor_SMD_ELO:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="archive" part="Device_R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61AE8012</tstamp>
+    </comp>
+    <comp ref="K9">
+      <value>ASSR-1218</value>
+      <footprint>Package_SO:SO-4_4.4x4.3mm_P2.54mm</footprint>
+      <datasheet>https://docs.broadcom.com/docs/AV02-0173EN</datasheet>
+      <fields>
+        <field name="MPM">ASSR-1218-003E</field>
+        <field name="Manufacturer">Broadcom</field>
+        <field name="PU">1.75</field>
+        <field name="SPN">1708432</field>
+        <field name="Supplier">Farnell</field>
+        <field name="ValMod">60V, 25mA</field>
+      </fields>
+      <libsource lib="archive" part="Relay_SolidState_ASSR-1218" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61A83A84</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>470R</value>
+      <footprint>Resistor_SMD_ELO:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="archive" part="Device_R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61B38A89</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>470R</value>
+      <footprint>Resistor_SMD_ELO:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="archive" part="Device_R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61B38A8F</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>470R</value>
+      <footprint>Resistor_SMD_ELO:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="archive" part="Device_R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61B3A4B2</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>470R</value>
+      <footprint>Resistor_SMD_ELO:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="archive" part="Device_R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61B3A4B8</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>470R</value>
+      <footprint>Resistor_SMD_ELO:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="archive" part="Device_R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61B3B52B</tstamp>
+    </comp>
+    <comp ref="X1">
+      <value>WAGO_218_5p</value>
+      <footprint>Connector_Wago_ELO:WAGO_218-505</footprint>
+      <datasheet>https://asset.conrad.com/media10/add/160267/c1/-/fr/000720125DS01/fiche-technique-720125-bornier-a-ressort-wago-218-505-050-mm-nombre-de-poles-num-5-gris-1-pcs.pdf</datasheet>
+      <fields>
+        <field name="MPM">218-505</field>
+        <field name="Manufacturer">Wago</field>
+        <field name="PU">3.25</field>
+        <field name="SPN">720125 - TX</field>
+        <field name="Supplier">Conrad</field>
+        <field name="ValMod">~</field>
+      </fields>
+      <libsource lib="archive" part="wago_connector_ELO_WAGO_218_5p" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61AFD0E1</tstamp>
+    </comp>
+    <comp ref="X4">
+      <value>WAGO_250-502-Connector</value>
+      <footprint>Connector_Wago_ELO:Wago_218-502_MOR</footprint>
+      <datasheet>https://asset.conrad.com/media10/add/160267/c1/-/fr/000720088DS01/fiche-technique-720088-bornier-a-ressort-wago-218-502-050-mm-nombre-de-poles-num-2-gris-1-pcs.pdf</datasheet>
+      <fields>
+        <field name="MPM">218-502</field>
+        <field name="Manufacturer">Wago</field>
+        <field name="PU">1.55</field>
+        <field name="SPN">720088 - TX</field>
+        <field name="Supplier">Conrad</field>
+        <field name="ValMod">~</field>
+      </fields>
+      <libsource lib="archive" part="wago_connector_ELO_WAGO_250-502-Connector" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61AFF613</tstamp>
+    </comp>
+    <comp ref="X2">
+      <value>WAGO_218_5p</value>
+      <footprint>Connector_Wago_ELO:WAGO_218-505</footprint>
+      <datasheet>https://asset.conrad.com/media10/add/160267/c1/-/fr/000720125DS01/fiche-technique-720125-bornier-a-ressort-wago-218-505-050-mm-nombre-de-poles-num-5-gris-1-pcs.pdf</datasheet>
+      <fields>
+        <field name="MPM">218-505</field>
+        <field name="Manufacturer">Wago</field>
+        <field name="PU">3.25</field>
+        <field name="SPN">720125 - TX</field>
+        <field name="Supplier">Conrad</field>
+        <field name="ValMod">~</field>
+      </fields>
+      <libsource lib="archive" part="wago_connector_ELO_WAGO_218_5p" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61B644C3</tstamp>
+    </comp>
+    <comp ref="X3">
+      <value>WAGO_218_5p</value>
+      <footprint>Connector_Wago_ELO:WAGO_218-505</footprint>
+      <datasheet>https://asset.conrad.com/media10/add/160267/c1/-/fr/000720125DS01/fiche-technique-720125-bornier-a-ressort-wago-218-505-050-mm-nombre-de-poles-num-5-gris-1-pcs.pdf</datasheet>
+      <fields>
+        <field name="MPM">218-505</field>
+        <field name="Manufacturer">Wago</field>
+        <field name="PU">3.25</field>
+        <field name="SPN">720125 - TX</field>
+        <field name="Supplier">Conrad</field>
+        <field name="ValMod">~</field>
+      </fields>
+      <libsource lib="archive" part="wago_connector_ELO_WAGO_218_5p" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61B853A0</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="archive" part="Connector_Raspberry_Pi_2_3">
+      <footprints>
+        <fp>PinHeader*2x20*P2.54mm*Vertical*</fp>
+        <fp>PinSocket*2x20*P2.54mm*Vertical*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Connector_Raspberry_Pi_2_3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="3V3" type="power_in"/>
+        <pin num="2" name="5V" type="power_in"/>
+        <pin num="3" name="SDA/GPIO2" type="BiDi"/>
+        <pin num="4" name="5V" type="power_in"/>
+        <pin num="5" name="SCL/GPIO3" type="BiDi"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="GCLK0/GPIO4" type="BiDi"/>
+        <pin num="8" name="GPIO14/TXD" type="BiDi"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="GPIO15/RXD" type="BiDi"/>
+        <pin num="11" name="GPIO17" type="BiDi"/>
+        <pin num="12" name="GPIO18/PWM0" type="BiDi"/>
+        <pin num="13" name="GPIO27" type="BiDi"/>
+        <pin num="14" name="GND" type="power_in"/>
+        <pin num="15" name="GPIO22" type="BiDi"/>
+        <pin num="16" name="GPIO23" type="BiDi"/>
+        <pin num="17" name="3V3" type="power_in"/>
+        <pin num="18" name="GPIO24" type="BiDi"/>
+        <pin num="19" name="MOSI0/GPIO10" type="BiDi"/>
+        <pin num="20" name="GND" type="power_in"/>
+        <pin num="21" name="MISO0/GPIO9" type="BiDi"/>
+        <pin num="22" name="GPIO25" type="BiDi"/>
+        <pin num="23" name="SCLK0/GPIO11" type="BiDi"/>
+        <pin num="24" name="~CE0~/GPIO8" type="BiDi"/>
+        <pin num="25" name="GND" type="power_in"/>
+        <pin num="26" name="~CE1~/GPIO7" type="BiDi"/>
+        <pin num="27" name="ID_SD/GPIO0" type="BiDi"/>
+        <pin num="28" name="ID_SC/GPIO1" type="BiDi"/>
+        <pin num="29" name="GCLK1/GPIO5" type="BiDi"/>
+        <pin num="30" name="GND" type="power_in"/>
+        <pin num="31" name="GCLK2/GPIO6" type="BiDi"/>
+        <pin num="32" name="PWM0/GPIO12" type="BiDi"/>
+        <pin num="33" name="PWM1/GPIO13" type="BiDi"/>
+        <pin num="34" name="GND" type="power_in"/>
+        <pin num="35" name="GPIO19/MISO1" type="BiDi"/>
+        <pin num="36" name="GPIO16" type="BiDi"/>
+        <pin num="37" name="GPIO26" type="BiDi"/>
+        <pin num="38" name="GPIO20/MOSI1" type="BiDi"/>
+        <pin num="39" name="GND" type="power_in"/>
+        <pin num="40" name="GPIO21/SCLK1" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="archive" part="Device_R">
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">Device_R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="archive" part="Mechanical_MountingHole">
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">Mechanical_MountingHole</field>
+      </fields>
+    </libpart>
+    <libpart lib="archive" part="Relay_SolidState_ASSR-1218">
+      <footprints>
+        <fp>SO*4.4x4.3mm*P2.54mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Relay_SolidState_ASSR-1218</field>
+        <field name="Footprint">Package_SO:SO-4_4.4x4.3mm_P2.54mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="archive" part="wago_connector_ELO_WAGO_218_5p">
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Value">wago_connector_ELO_WAGO_218_5p</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+        <pin num="3" name="~" type="input"/>
+        <pin num="4" name="~" type="input"/>
+        <pin num="5" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="archive" part="wago_connector_ELO_WAGO_250-502-Connector">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">wago_connector_ELO_WAGO_250-502-Connector</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="archive">
+      <uri>C:\Users\FIX-4\Desktop\Github\controle-des-lumieres-knx\4_Fabrication\Version_1\C_Kicad\shield_octo/shield_octo-archive.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/DRV7">
+      <node ref="X2" pin="4"/>
+      <node ref="K8" pin="4"/>
+    </net>
+    <net code="2" name="/DRV2">
+      <node ref="X1" pin="3"/>
+      <node ref="K3" pin="4"/>
+    </net>
+    <net code="3" name="/DRV1">
+      <node ref="K2" pin="4"/>
+      <node ref="X1" pin="2"/>
+    </net>
+    <net code="4" name="/DRV5">
+      <node ref="K6" pin="4"/>
+      <node ref="X2" pin="2"/>
+    </net>
+    <net code="5" name="/DRV12">
+      <node ref="X3" pin="5"/>
+      <node ref="K13" pin="4"/>
+    </net>
+    <net code="6" name="/DRV11">
+      <node ref="K12" pin="4"/>
+      <node ref="X3" pin="4"/>
+    </net>
+    <net code="7" name="/DRV10">
+      <node ref="X3" pin="3"/>
+      <node ref="K11" pin="4"/>
+    </net>
+    <net code="8" name="/DRV9">
+      <node ref="K10" pin="4"/>
+      <node ref="X3" pin="2"/>
+    </net>
+    <net code="9" name="/DRV8">
+      <node ref="X2" pin="5"/>
+      <node ref="K9" pin="4"/>
+    </net>
+    <net code="10" name="/DRV3">
+      <node ref="X1" pin="4"/>
+      <node ref="K4" pin="4"/>
+    </net>
+    <net code="11" name="/DRV6">
+      <node ref="K7" pin="4"/>
+      <node ref="X2" pin="3"/>
+    </net>
+    <net code="12" name="/DRV4">
+      <node ref="X1" pin="5"/>
+      <node ref="K5" pin="4"/>
+    </net>
+    <net code="13" name="/COM1">
+      <node ref="K3" pin="3"/>
+      <node ref="K4" pin="3"/>
+      <node ref="K2" pin="3"/>
+      <node ref="K5" pin="3"/>
+      <node ref="X1" pin="1"/>
+    </net>
+    <net code="14" name="/COM2">
+      <node ref="K9" pin="3"/>
+      <node ref="K8" pin="3"/>
+      <node ref="K7" pin="3"/>
+      <node ref="K6" pin="3"/>
+      <node ref="X2" pin="1"/>
+    </net>
+    <net code="15" name="/COM3">
+      <node ref="K12" pin="3"/>
+      <node ref="K11" pin="3"/>
+      <node ref="K13" pin="3"/>
+      <node ref="K10" pin="3"/>
+      <node ref="X3" pin="1"/>
+    </net>
+    <net code="16" name="Net-(K13-Pad1)">
+      <node ref="R12" pin="1"/>
+      <node ref="K13" pin="1"/>
+    </net>
+    <net code="17" name="Net-(K6-Pad1)">
+      <node ref="R5" pin="1"/>
+      <node ref="K6" pin="1"/>
+    </net>
+    <net code="18" name="Net-(K5-Pad1)">
+      <node ref="R4" pin="1"/>
+      <node ref="K5" pin="1"/>
+    </net>
+    <net code="19" name="Net-(K4-Pad1)">
+      <node ref="K4" pin="1"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="20" name="Net-(K3-Pad1)">
+      <node ref="R2" pin="1"/>
+      <node ref="K3" pin="1"/>
+    </net>
+    <net code="21" name="Net-(K2-Pad1)">
+      <node ref="K2" pin="1"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="22" name="Net-(K1-Pad17)">
+      <node ref="K1" pin="17"/>
+    </net>
+    <net code="23" name="Net-(K1-Pad1)">
+      <node ref="K1" pin="1"/>
+    </net>
+    <net code="24" name="GND">
+      <node ref="K12" pin="2"/>
+      <node ref="K13" pin="2"/>
+      <node ref="K9" pin="2"/>
+      <node ref="K11" pin="2"/>
+      <node ref="K1" pin="34"/>
+      <node ref="K1" pin="39"/>
+      <node ref="K1" pin="30"/>
+      <node ref="K1" pin="25"/>
+      <node ref="K1" pin="14"/>
+      <node ref="K3" pin="2"/>
+      <node ref="K1" pin="20"/>
+      <node ref="K2" pin="2"/>
+      <node ref="K1" pin="9"/>
+      <node ref="K1" pin="6"/>
+      <node ref="X4" pin="2"/>
+      <node ref="K5" pin="2"/>
+      <node ref="K4" pin="2"/>
+      <node ref="K6" pin="2"/>
+      <node ref="K7" pin="2"/>
+      <node ref="K8" pin="2"/>
+      <node ref="K10" pin="2"/>
+    </net>
+    <net code="25" name="+5V">
+      <node ref="K1" pin="4"/>
+      <node ref="K1" pin="2"/>
+      <node ref="X4" pin="1"/>
+    </net>
+    <net code="26" name="/CMD12">
+      <node ref="R12" pin="2"/>
+      <node ref="K1" pin="23"/>
+    </net>
+    <net code="27" name="/CMD11">
+      <node ref="K1" pin="19"/>
+      <node ref="R11" pin="2"/>
+    </net>
+    <net code="28" name="/CMD10">
+      <node ref="R10" pin="2"/>
+      <node ref="K1" pin="21"/>
+    </net>
+    <net code="29" name="/CMD9">
+      <node ref="K1" pin="24"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="30" name="/CMD8">
+      <node ref="K1" pin="26"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="31" name="/CMD7">
+      <node ref="K1" pin="31"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="32" name="/CMD6">
+      <node ref="R6" pin="2"/>
+      <node ref="K1" pin="29"/>
+    </net>
+    <net code="33" name="/CMD5">
+      <node ref="R5" pin="2"/>
+      <node ref="K1" pin="7"/>
+    </net>
+    <net code="34" name="/CMD4">
+      <node ref="R4" pin="2"/>
+      <node ref="K1" pin="5"/>
+    </net>
+    <net code="35" name="/CMD3">
+      <node ref="R3" pin="2"/>
+      <node ref="K1" pin="3"/>
+    </net>
+    <net code="36" name="/CMD2">
+      <node ref="R2" pin="2"/>
+      <node ref="K1" pin="28"/>
+    </net>
+    <net code="37" name="/CMD1">
+      <node ref="K1" pin="27"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="38" name="Net-(K10-Pad1)">
+      <node ref="K10" pin="1"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="39" name="Net-(K8-Pad1)">
+      <node ref="K8" pin="1"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="40" name="Net-(K7-Pad1)">
+      <node ref="K7" pin="1"/>
+      <node ref="R6" pin="1"/>
+    </net>
+    <net code="41" name="Net-(K12-Pad1)">
+      <node ref="K12" pin="1"/>
+      <node ref="R11" pin="1"/>
+    </net>
+    <net code="42" name="Net-(K11-Pad1)">
+      <node ref="K11" pin="1"/>
+      <node ref="R10" pin="1"/>
+    </net>
+    <net code="43" name="Net-(K1-Pad22)">
+      <node ref="K1" pin="22"/>
+    </net>
+    <net code="44" name="Net-(K1-Pad18)">
+      <node ref="K1" pin="18"/>
+    </net>
+    <net code="45" name="Net-(K1-Pad16)">
+      <node ref="K1" pin="16"/>
+    </net>
+    <net code="46" name="Net-(K1-Pad15)">
+      <node ref="K1" pin="15"/>
+    </net>
+    <net code="47" name="Net-(K1-Pad13)">
+      <node ref="K1" pin="13"/>
+    </net>
+    <net code="48" name="Net-(K1-Pad12)">
+      <node ref="K1" pin="12"/>
+    </net>
+    <net code="49" name="Net-(K1-Pad11)">
+      <node ref="K1" pin="11"/>
+    </net>
+    <net code="50" name="Net-(K1-Pad10)">
+      <node ref="K1" pin="10"/>
+    </net>
+    <net code="51" name="Net-(K1-Pad8)">
+      <node ref="K1" pin="8"/>
+    </net>
+    <net code="52" name="Net-(K1-Pad40)">
+      <node ref="K1" pin="40"/>
+    </net>
+    <net code="53" name="Net-(K1-Pad38)">
+      <node ref="K1" pin="38"/>
+    </net>
+    <net code="54" name="Net-(K1-Pad37)">
+      <node ref="K1" pin="37"/>
+    </net>
+    <net code="55" name="Net-(K1-Pad36)">
+      <node ref="K1" pin="36"/>
+    </net>
+    <net code="56" name="Net-(K1-Pad35)">
+      <node ref="K1" pin="35"/>
+    </net>
+    <net code="57" name="Net-(K1-Pad33)">
+      <node ref="K1" pin="33"/>
+    </net>
+    <net code="58" name="Net-(K1-Pad32)">
+      <node ref="K1" pin="32"/>
+    </net>
+    <net code="59" name="Net-(K9-Pad1)">
+      <node ref="R8" pin="1"/>
+      <node ref="K9" pin="1"/>
+    </net>
+  </nets>
+</export>

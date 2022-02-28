@@ -1,0 +1,399 @@
+/* style.css | ../static/style.css | Robin Forestier | 12.2021
+ * used for page1.html | page2.html on ../templates/
+ */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right,#333 0%, #777 100%);
+  box-sizing: border-box;
+}
+
+
+.header {
+  float: left;
+  width: 100%;
+  height: auto;
+  line-height: 25px;
+  background-color: #333333;
+  color: white;
+  vertical-align: middle;
+}
+
+.header h1 {
+    margin-left: 10px;
+}
+
+.header p {
+    float: right;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.header a {
+    margin-top: 10px;
+    float: right;
+}
+
+.warning {
+    color: #F00;
+}
+
+.column-r {
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  padding-top: 5%;
+}
+
+.column-l {
+  float: left;
+  width: auto;
+  height: 100%;
+  padding: 5px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+#grid {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*
+ALL css for the button on / off
+*/
+
+.button_num {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .4);
+
+    background: transparent;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: 250px;
+    max-height: 150px;
+    min-width: 100px;
+    min-height: 80px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0,0.4);
+
+    overflow: none;
+    transition: 0.5s;
+}
+
+.button_num:hover {
+    box-shadow: 0 2px 20px #333;
+}
+
+.buttom_num .btn .text_num .text_info .page_next {
+  position: relative;
+}
+
+.btn {
+    width: 100%;
+    height: 100%;
+
+    background: transparent;
+    border: none;
+    outline: none;
+
+    text-align: center;
+    padding: 10px;
+
+    border-radius: 20px;
+    border: 1px solid #666;
+}
+
+.text_num,
+.text_info {
+    color: #FFF;
+    font-size: 18px;
+}
+
+.text_info {
+  position: relative;
+  display: block;
+  top: 40%;
+}
+
+.text_num {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+
+  white-space: nowrap;
+}
+
+.text_num:after {
+  content: "";
+
+  width: 150%;
+  height: auto;
+
+
+  min-width: 40px;
+  min-height: 40px;
+
+  border-radius: 20px;
+
+  top: -50%;
+  left: 50%;
+
+  transform: translate(-50%, 2%);
+
+  position: absolute;
+  text-align: center;
+  z-index: -1;
+}
+
+span#on:after {
+    background: #333;
+}
+
+span#off:after {
+    background: #666;
+}
+
+/* Change the color of the buttons */
+.btn#on {
+        background-image: linear-gradient(
+        rgba(90, 90, 90, 1) 0%,
+        rgba(90, 90, 90, 0.3) 25%,
+        rgba(90, 90, 90, 0.15) 50%,
+        rgba(90, 90, 90, 0.075) 65%,
+        rgba(90, 90, 90, 0.037) 80%,
+        rgba(90, 90, 90, 0.019) 88%,
+        rgba(90, 90, 90, 0) 100%);
+}
+
+.btn#off {
+    background-image: linear-gradient(
+        rgba(48, 48, 48, 0.5) 5%,
+        rgba(48, 48, 48, 0.3) 15%,
+        rgba(48, 48, 48, 0.15) 25%,
+        rgba(48, 48, 48, 0.075) 40%,
+        rgba(48, 48, 48, 0.037) 60%,
+        rgba(48, 48, 48, 0.019) 88%,
+        rgba(48, 48, 48, 0) 100%);
+}
+
+/* Buttons page next */
+
+.page_next {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #FFF;
+    font-size: 24px;
+}
+
+.page_next:after {
+  content: "";
+
+  width: 45px;
+  height: 45px;
+
+  min-width: 30px;
+  min-height: 30px;
+
+  border-radius: 50%;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  position: absolute;
+  text-align: center;
+  z-index: -1;
+
+  background: #333;
+}
+
+/* Plan de l'atelier */
+
+canvas {
+  width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#plan {
+  width: 80%
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  background: #333;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: auto;
+
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
+/* Footer text */
+footer p {
+  order: 0;
+  font-size: 10pt;
+  padding-left: 20px;
+  color: #FFF;
+
+  flex-grow: 1;
+}
+
+/* Footer link icon */
+#logo_xwiki, #logo_git, #logo_yt {
+  order: 1;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#logo_xwiki:hover, #logo_git:hover, #logo_yt:hover {
+  opacity: 0.3;
+}
+
+/* Only for raspberry pi screen (res : 800px / 480px ) */
+@media all and (max-width: 800px) and (max-height: 480px) and (min-width: 799px){
+
+    * {
+        cursor: none;
+     }
+
+    body {
+        overflow-y: hidden;
+    }
+
+    .column-l {
+        display: block;
+        padding-top: 5px;
+        margin: 0;
+
+        margin-top: auto;
+        margin-left: auto;
+
+        width: 40%;
+    }
+
+
+    .column-r {
+      position: relative;
+      z-index: 0;
+      float: center;
+      width: auto;
+      height: auto;
+      padding: 10px;
+      margin-left: 0px;
+      top: 30px;
+    }
+
+    #grid {
+        grid-template-rows: 30% 30% 30%;
+    }
+
+    footer {
+      display: none;
+    }
+
+}
+
+@media only screen and (hover: none) and (pointer: coarse) and (orientation: portrait){
+
+  .header h1 {
+    font-size: 15px;
+    float: left;
+    margin-top: 20px;
+  }
+
+  #myCanvas {
+    width: 50%;
+  }
+
+  .column-l {
+    margin: 0;
+    text-align: center;
+    width: auto;
+    height: auto;
+  }
+
+  .column-r {
+
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    float: center;
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+
+  .button_num {
+
+    max-width: 250px;
+    max-height: 150px;
+    min-width: 80px;
+    min-height: 8px;
+  }
+
+  .text_info {
+    position: relative;
+    display: block;
+    top: 20px;
+  }
+
+  #grid {
+    display: grid;
+    width: 100%;
+    row-gap: 5px;
+    column-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/
+    height: 40px;
+  }
+
+  footer p {
+    display: none;
+  }
+
+  #logo_xwiki, #logo_git, #logo_yt {
+    text-align: center;
+    transform: scale(1);
+    width: 33%;
+  }
+}
+

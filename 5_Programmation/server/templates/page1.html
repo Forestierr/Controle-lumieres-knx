@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="refresh" content="60">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="black">
+
+    <meta name="author" content="Robin Forestier">
+    <meta name="description" content="Page 1 - controle des lumières en knx">
+
+    <title>Light Control</title>
+    <link rel="icon" type="image/x-icon" href="/static/img/LogoElo.ico">
+    <link rel="shortcut icon" href="/static/img/LogoElo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/style.css/">
+</head>
+<body>
+    <div class="header">
+        <a href="/settings"> <img src="/static/img/logo.png" alt="logo" width="75%"> </a>
+        <p> {{ time }} </p>
+		<p class="warning"> {{ warning }} </p>
+        <h1>ELO Light Control</h1>
+    </div>
+
+    <div class="row" id="row">
+        <div class="column-l">
+            <img src="/static/img/plan_vide.png" alt="plan" id="plan" style="display: none">
+            <canvas id="myCanvas" width="356px" height="451px">
+                <script>
+                    window.onload = function() {
+                        var c = document.getElementById("myCanvas");
+                        var ctx = c.getContext("2d");
+                        var img = document.getElementById("plan");
+                        ctx.drawImage(img, 0, 0);
+
+                        ctx.fillStyle = "{{ color[0] }}";
+                        ctx.fillRect(30, 30, 10, 370);
+                        ctx.fillStyle = "{{ color[1] }}";
+                        ctx.fillRect(83, 30, 10, 370);
+                        ctx.fillStyle = "{{ color[2] }}";
+                        ctx.fillRect(130, 65, 10, 335);
+                        ctx.fillStyle = "{{ color[3] }}";
+                        ctx.fillRect(180, 65, 10, 335);
+                        ctx.fillStyle = "{{ color[4] }}";
+                        ctx.fillRect(240, 65, 10, 245);
+                        ctx.fillStyle = "{{ color[5] }}";
+                        ctx.fillRect(285, 30, 10, 280);
+                        ctx.fillStyle = "{{ color[6] }}";
+                        ctx.fillRect(335, 30, 10, 280);
+                        ctx.fillStyle = "{{ color[7] }}";
+                        ctx.fillRect(140, 30, 100, 10);
+                    }
+                </script>
+            </canvas>
+
+            <noscript>
+                <p style="color:red">JavaScript is Disable on you brother !</p>
+                <p style="color:red">To have the best use of this site, please turn it on.</p>
+            </noscript>
+
+        </div>
+
+        <form method="post" action="/page1" class="column-r" id="grid">
+            {% for bt in button %}
+            <div class="button_num">
+                <button class="btn" id={{ bt }} type="submit" name="button_p1" value={{ loop.index }}>
+                    {% if loop.index == 8 %}
+                        <span class="text_num" id={{ bt }}> P </span>
+                    {% else %}
+                        <span class="text_num" id={{ bt }}> {{ loop.index }} </span>
+                    {% endif %}
+                    {% if bt == "off" %}
+                        <p class="text_info"> OFF </p>
+                    {% else %}
+                        <p class="text_info"> ON </p>
+                    {% endif %}
+                </button>
+            </div>
+            {% endfor %}
+            <div class="button_num">
+                <button class="btn" id="off" type="submit" name="button_p1" value="page_2">
+                    <span class="page_next"> + </span>
+                    <p class="text_on" style="visibility: hidden"> OFF </p>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>Robin Forestier | 2021 - 2022</p>
+        <a href="https://xwiki.serverelo.org/xwiki/bin/view/Centre%20de%20Formation%20ELO/Projets/Controle%20des%20lumières%20KNX/" target="_blank" id="logo_xwiki"> <img src="/static/img/logo_xwiki.png" width="70px"> </a>
+        <a href="http://172.16.32.230/Forestier/controle-des-lumieres-knx" target="_blank" id="logo_git"> <img src="/static/img/logo_git.png" width=30px"> </a>
+        <a href="https://www.youtube.com/channel/UC0hVF6m1WlG9nCOo1_hOlJg" target="_blank" id="logo_yt"> <img src="/static/img/logo_yt.png" width="30px"> </a>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* sttings.css | ../static/settings.css | Robin Forestier | 12.2021
+ * used for settings.html on ../templates/settings.html
+ */
+
+* {
+
+}
+
+p {
+    color: white;
+}
+
+body {
+  margin: 0;
+  background-color: #000000;
+}
+
+.header {
+  float: left;
+  width: 100%;
+  height: auto;
+  line-height: 25px;
+  background-color: #333333;
+  color: white;
+  vertical-align: middle;
+}
+
+.header h1 {
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.header p {
+    float: right;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.header a {
+    margin-top: 10px;
+    float: right;
+}
+
+.form_setting {
+   margin-top: -30px;
+}
+
+.form_setting p {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+input {
+    accent-color: #808080;
+    margin-left: 10px;
+}
+
+.btn_submit {
+    padding: 5px;
+    margin: 10px;
+}
+
+.warning {
+    color: #F00;
+}
+
+/* Only for raspberry pi screen (res : 800px / 480px ) */
+@media all and (max-width: 800px) and (max-height: 480px) and (min-width: 799px){
+    * {
+        cursor: none;
+    }
+
+    .header p {
+        font-size: 20px;
+    }
+
+    .form_setting {
+        margin-top: -35px;
+    }
+
+    .header a {
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .header p {
+        font-size: 30px;
+    }
+
+    .header a {
+        margin-top: 20px;
+    }
+
+    .form_setting p {
+        font-size: 35px;
+    }
+
+    input {
+        font-size: 25px;
+        margin-left: 30px;
+    }
+
+    .btn_check {
+        transform: scale(2);
+    }
+
+    .btn_submit {
+        font-size: 25px;
+    }
+}
+

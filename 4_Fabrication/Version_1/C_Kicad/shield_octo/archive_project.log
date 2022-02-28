@@ -1,0 +1,70 @@
+12-08 13:54:12 archive_project.action_archive_project 101:Archive plugin version: 26 started
+12-08 13:54:14 archive_project.action_archive_project 157:Starting archiving only schematics
+12-08 13:54:14 archive_project.archive_project 131:Starting to archive symbols
+12-08 13:54:14 archive_project.archive_project 138:Pcb filename:C:\Users\FIX-4\Desktop\Github\controle-des-lumieres-knx\4_Fabrication\Version_1\C_Kicad\shield_octo\shield_octo.kicad_pcb
+12-08 13:54:14 archive_project.archive_project 150:Kicad config path: C:\Users\FIX-4\AppData\Roaming\kicad
+12-08 13:54:14 archive_project.archive_project 208:project-archive.lib is already in the sym-lib-table, using its nickname
+12-08 13:54:14 archive_project.archive_project 309:found all subsheets
+12-08 13:54:14 archive_project.archive_project 317:Archiving file: C:\Users\FIX-4\Desktop\Github\controle-des-lumieres-knx\4_Fabrication\Version_1\C_Kicad\shield_octo\shield_octo.sch
+12-08 13:54:14 archive_project.archive_project 458:Writing schematics file(s)
+12-08 13:54:16 archive_project.action_archive_project 202:Starting 3D model archiving
+12-08 13:54:16 archive_project.archive_project 473:Starting to archive 3D models
+12-08 13:54:16 archive_project.archive_project 485:KISYS3DMOD path: C:\Program Files\KiCad\share\kicad\modules\packages3d
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/218-502_MOR.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/218-502_MOR.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/218-505.stp
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/218-505.stp
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/218-505.stp
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/218-505.stp
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/218-505.stp
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/218-505.stp
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/R_1206_3216Metric.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/SO-4_4.4x4.3mm_P2.54mm.wrl
+12-08 13:54:16 archive_project.archive_project 512:Trying to copy: ${KIPRJMOD}/shapes3D/PinSocket_2x20_P2.54mm_Vertical.wrl
+12-08 13:54:16 archive_project.archive_project 565:Remapping: ${KIPRJMOD}/shapes3D/PinSocket_2x20_P2.54mm_Vertical.wrl

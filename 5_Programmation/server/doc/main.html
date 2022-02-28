@@ -1,0 +1,1469 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>main API documentation</title>
+<meta name="description" content="main.py | Robin Forestier | 2021 / 2022 …" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>main</code></h1>
+</header>
+<section id="section-intro">
+<p>main.py | Robin Forestier | 2021 / 2022</p>
+<p>Goal : Create a user interface to controle the light of the ELO's workshop.</p>
+<p>Explanation :
+I use Flask for create a Web server.
+A shield is plug on the Raspberry Pi (server) with optocoupleur to ABB module with the GPIO.</p>
+<p>┌─────────────────────────────────┐
+│ Raspberry Pi 3B+
+│ ┌───────────────────────┐
+│
+┌──┐ │ │ Shield Octo
+│
+│
+│
+│ │ │
+│
+│
+GPIO 2
+|
+│
+│ │ │ X1 / DRV3 |
+│
+│
+GPIO 3
+|
+│
+│ │ │ X1 / DRV4 |
+│
+│
+GPIO 4
+|
+│
+│ │ │ X2 / DRV1 |
+│
+│
+|
+│
+│ │ │
+|
+│
+│
+GPIO 10 |
+│
+│ │ │ X3 / DRV3 |
+│
+│
+GPIO 9
+|
+│
+│ │ │ X3 / DRV2 |
+│
+│
+GPIO 11 | GPIO 8
+│
+│ │ │ X3 / DRV4 | X3 / DRV1 │
+│
+| GPIO 7
+│
+│ │ │
+| X2 / DRV4 │
+│
+GPIO 0
+| GPIO 1
+│
+│ │ │ X1 / DRV1 | X1 / DRV2 │
+│
+GPIO 5
+|
+│
+│ │ │ X2 / DRV2 |
+│
+│
+GPIO 6
+|
+│
+│ │ │ X2 / DRV3 |
+│
+│
+│
+│ │ └───────────────────────┘
+│
+│
+│ │
+│
+└──┘ │
+│
+┌───────┐
+│
+│
+┌────┐
+┌────┐
+│
+│
+│
+│
+│
+│
+│
+│
+│
+│
+│
+└──┴────┴───┴────┴────┴───────┴───┘</p>
+<div class="admonition liens">
+<p class="admonition-title">Liens</p>
+<p>GitLab : <a href="http://172.16.32.230/Forestier/controle-des-lumieres-knx">http://172.16.32.230/Forestier/controle-des-lumieres-knx</a> </p>
+<p>XWiki : <a href="https://xwiki.serverelo.org/xwiki/bin/view/Centre%20de%20Formation%20ELO/Projets/Controle%20des%20lumières%20KNX/">https://xwiki.serverelo.org/xwiki/bin/view/Centre%20de%20Formation%20ELO/Projets/Controle%20des%20lumières%20KNX/</a></p>
+</div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">&#34;&#34;&#34;
+main.py | Robin Forestier | 2021 / 2022
+
+Goal : Create a user interface to controle the light of the ELO&#39;s workshop.
+
+Explanation :   I use Flask for create a Web server.
+                A shield is plug on the Raspberry Pi (server) with optocoupleur to ABB module with the GPIO.
+
+┌─────────────────────────────────┐
+│ Raspberry Pi 3B+                │ ┌───────────────────────┐
+│                            ┌──┐ │ │ Shield Octo           │
+│                            │  │ │ │                       │
+│          GPIO 2  |         │  │ │ │ X1 / DRV3 |           │
+│          GPIO 3  |         │  │ │ │ X1 / DRV4 |           │
+│          GPIO 4  |         │  │ │ │ X2 / DRV1 |           │
+│                  |         │  │ │ │           |           │
+│          GPIO 10 |         │  │ │ │ X3 / DRV3 |           │
+│          GPIO 9  |         │  │ │ │ X3 / DRV2 |           │
+│          GPIO 11 | GPIO 8  │  │ │ │ X3 / DRV4 | X3 / DRV1 │
+│                  | GPIO 7  │  │ │ │           | X2 / DRV4 │
+│          GPIO 0  | GPIO 1  │  │ │ │ X1 / DRV1 | X1 / DRV2 │
+│          GPIO 5  |         │  │ │ │ X2 / DRV2 |           │
+│          GPIO 6  |         │  │ │ │ X2 / DRV3 |           │
+│                            │  │ │ └───────────────────────┘
+│                            │  │ │
+│                            └──┘ │
+│                     ┌───────┐   │
+│  ┌────┐   ┌────┐    │       │   │
+│  │    │   │    │    │       │   │
+└──┴────┴───┴────┴────┴───────┴───┘
+
+.. Liens::
+    GitLab : http://172.16.32.230/Forestier/controle-des-lumieres-knx \n
+    XWiki : https://xwiki.serverelo.org/xwiki/bin/view/Centre%20de%20Formation%20ELO/Projets/Controle%20des%20lumières%20KNX/
+&#34;&#34;&#34;
+
+from flask import Flask, render_template, request, session, url_for, redirect, flash, abort
+from flask_sqlalchemy import SQLAlchemy
+from flask_session import Session
+import time
+import datetime
+import threading
+import csv
+import os
+import logging
+from werkzeug.exceptions import HTTPException
+
+rpi = False
+&#34;&#34;&#34;
+rpi is used to know if the programm is running on a Raspberry Pi or not. \n
+rpi = True --&gt; run on Raspberry Pi. \n
+esle : False
+&#34;&#34;&#34;
+try:
+    import RPi.GPIO as GPIO
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setwarnings(False)
+
+    # GPIO 0 to 11 in output mode at 0
+    for i in range(12):
+        GPIO.setup(i, GPIO.OUT, initial=GPIO.LOW)
+
+    #it&#39;s a raspberry pi
+    rpi = True
+except :
+    rpi = False
+
+#Creating log file (log.log)
+logging.basicConfig(filename=&#34;log.log&#34;, format=&#39;%(asctime)s - %(levelname)s - %(message)s&#39;, level=logging.DEBUG)
+
+#Creating flask app
+app = Flask(__name__)
+
+#Config
+app.config.update(
+    SECRET_KEY = &#39;somesecretkeythatonlyishouldknow&#39;,
+    SQLALCHEMY_DATABASE_URI = &#34;sqlite:///db.sqlite3&#34;,
+    SQLALCHEMY_TRACK_MODIFICATIONS = False,
+    SESSION_TYPE = &#39;sqlalchemy&#39;,
+    SESSION_COOKIE_NAME = &#39;MyBeautifulCookies&#39;,
+    SESSION_COOKIE_SAMESITE = &#39;Strict&#39;,
+)
+
+db = SQLAlchemy(app)
+app.config[&#39;SESSION_SQLALCHEMY&#39;] = db
+sess = Session(app)
+
+#creat the database
+db.create_all()
+
+authorize_ip = [&#34;localhost&#34;, &#34;127.0.0.1&#34;, &#34;172.16.32.133&#34;]
+&#34;&#34;&#34;Ip of the server (for the local user) use to skip authentication.&#34;&#34;&#34;
+
+buttonSts_p1 = [&#34;off&#34;] * 8
+&#34;&#34;&#34;value of all the page1 buttons&#34;&#34;&#34;
+buttonSts_p2 = [&#34;on&#34;] * 8
+&#34;&#34;&#34;value of all the page2 buttons&#34;&#34;&#34;
+color = [&#34;#333333&#34;] * 8
+&#34;&#34;&#34;color of the 8 neon&#34;&#34;&#34;
+warning = &#34;&#34;
+&#34;&#34;&#34;warning from the app to the server&#34;&#34;&#34;
+
+#Path to config file &#34;/config.csv&#34;
+if rpi:
+    path_to_csv = &#34;/home/pi/controle-des-lumieres-knx/5_Programmation/server/config.csv&#34;
+else:
+    path_to_csv = &#34;C:/Users/FIX-4/Desktop/server_v2/config.csv&#34;
+
+class User:
+    &#34;&#34;&#34;
+    User : creat different user for the login.
+    &#34;&#34;&#34;
+    def __init__(self, id, username, password):
+        &#34;&#34;&#34;
+        Parameters
+        ----------
+        id : int
+            A basic id for eache login.
+        username : str
+            The username for the login.
+        password : str
+            The password of the login.
+        &#34;&#34;&#34;
+        self.id = id
+        self.username = username
+        self.password = password
+
+users = []
+
+&#34;&#34;&#34;
+user :
+    elo - basic user / can only modifie light
+    admin - all acces (settings acces)
+    local - only used for the raspberry why the tuchscreen (server) / can&#39;t acces to settings / don&#39;t have to login.
+&#34;&#34;&#34;
+users.append(User(id=1, username=&#39;elo&#39;, password=&#39;elo&#39;))
+users.append(User(id=2, username=&#39;admin&#39;, password=&#39;admin&#39;))
+users.append(User(id=3, username=&#39;local&#39;, password=&#39;local&#39;))
+
+def gpio_modif():
+    &#34;&#34;&#34;
+    modif all the GPIO by looking into buttonSts_p1[]
+
+    Parameters
+    ----------
+    ...
+    &#34;&#34;&#34;
+    if rpi:
+        for i in range(8):
+            if buttonSts_p1[i] == &#34;off&#34;:
+                #OFF
+                GPIO.output(i, 0)
+            else:
+                #ON
+                GPIO.output(i, 1)
+                #time.sleep(1)     #security time for fuses
+    else:
+        pass
+
+
+def getTime():
+    &#34;&#34;&#34;
+    Get time on format : HH:MM
+
+    Parameters
+    ----------
+    ...
+
+    Returns
+    ----------
+    current_time : str
+        The current time in format HH:MM
+    &#34;&#34;&#34;
+    t = time.localtime()
+    current_time = time.strftime(&#34;%H:%M&#34;, t)
+
+    return current_time
+
+@app.errorhandler(HTTPException)
+def handle_exception(e):
+    &#34;&#34;&#34;handle_exception : all http error are show on the 404.html page&#34;&#34;&#34;
+    e = str(e) #404 not ...  :  The request URL ...
+    code = e.split(&#34;:&#34;) #404 Not Found
+
+    return render_template(&#39;404.html&#39;, error=code[1], title=code[0]), code[0][0:3]
+
+@app.route(&#34;/login&#34;, methods=[&#39;POST&#39;, &#39;GET&#39;])
+@app.route(&#34;/&#34;, methods=[&#39;POST&#39;, &#39;GET&#39;])
+def login():
+    &#34;&#34;&#34;
+    login page
+
+    Receive from POST : username / password
+    We first check if username existe and after password.
+    If it&#39;s a bad username or pass we flash the error.
+
+    Parameters
+    ----------
+    ...
+
+    Returns
+    ----------
+    login.html : str
+        Page login in html and (css).
+    time : str
+        The current time.
+    warning : str
+        The différent warning.
+    &#34;&#34;&#34;
+    current_time = getTime()
+    ip = request.environ.get(&#39;HTTP_X_REAL_IP&#39;, request.remote_addr)
+
+    #check for autorized ip
+    for i in authorize_ip:
+        if ip == i:
+            logging.info(&#34;creat local user&#34; + str(ip))
+            session[&#39;user_id&#39;] = 3
+            return redirect(url_for(&#39;page1&#39;))
+
+    #if already login
+    if session.get(&#34;user_id&#34;) is not None:
+        return redirect(url_for(&#39;page1&#39;))
+
+    if request.method == &#39;POST&#39;:
+        session.pop(&#39;user_id&#39;, None)
+
+        username = request.form[&#39;username&#39;]
+        password = request.form[&#39;password&#39;]
+
+        try:
+            user = [x for x in users if x.username == username][0]
+            if user and user.password == password:
+                session[&#39;user_id&#39;] = user.id
+                logging.info(&#34;New login username : &#34; + username + &#34; ip : &#34; + str(ip))
+                #Login accepted
+                return redirect(url_for(&#39;page1&#39;))
+            elif user.password != password:
+                #bad password / log it / and flash the error
+                logging.warning(&#34;bad password : &#34; + username + &#34; ip : &#34; + str(ip))
+                flash(&#34;Bad password&#34;)
+
+            return redirect(url_for(&#39;login&#39;))
+
+        except:
+            #bad username / log it / and flash the error
+            logging.warning(&#34;bad username : &#34; + username + &#34; ip : &#34; + str(ip))
+            flash(&#34;Bad username&#34;)
+            return redirect(url_for(&#39;login&#39;))
+
+    return render_template(&#34;login.html&#34;, time=current_time, warning=warning)
+
+@app.route(&#34;/page1&#34;, methods = [&#39;POST&#39;, &#39;GET&#39;])
+def page1():
+    &#34;&#34;&#34;
+    page1
+
+    The page1 show on the left a map of the lights and on the right 9 buttons.
+
+    Parameters
+    ----------
+    ...
+
+    Returns
+    ----------
+    page1.html : str
+        Page page1 in html and (css).
+    button : list
+        List of the state of the buttons.
+    color : list
+        List of neon colors on the map.
+    time : str
+        The current time.
+    warning : str
+        The différent warning.
+    &#34;&#34;&#34;
+    current_time = getTime()
+
+    # check the id for the session and redirect to loggin.
+    if session.get(&#34;user_id&#34;) == None:
+        return redirect(url_for(&#39;login&#39;))
+
+    if all(elem == &#34;on&#34; for elem in buttonSts_p1):
+        buttonSts_p2[0] = &#34;on&#34;
+    else:
+        buttonSts_p2[0] = &#34;off&#34;
+
+    if request.method == &#39;POST&#39;:
+        if request.form[&#39;button_p1&#39;] == &#39;1&#39;:
+            if buttonSts_p1[0] == &#34;on&#34;:
+                buttonSts_p1[0] = &#34;off&#34;
+                color[0] = &#34;#333333&#34;
+            else:
+                buttonSts_p1[0] = &#34;on&#34;
+                color[0] = &#34;#FFFFFF&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;2&#39;:
+            if buttonSts_p1[1] == &#34;on&#34;:
+                buttonSts_p1[1] = &#34;off&#34;
+                color[1] = &#34;#333333&#34;
+            else:
+                buttonSts_p1[1] = &#34;on&#34;
+                color[1] = &#34;#FFFFFF&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;3&#39;:
+            if buttonSts_p1[2] == &#34;on&#34;:
+                buttonSts_p1[2] = &#34;off&#34;
+                color[2] = &#34;#333333&#34;
+            else:
+                buttonSts_p1[2] = &#34;on&#34;
+                color[2] = &#34;#FFFFFF&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;4&#39;:
+            if buttonSts_p1[3] == &#34;on&#34;:
+                buttonSts_p1[3] = &#34;off&#34;
+                color[3] = &#34;#333333&#34;
+            else:
+                buttonSts_p1[3] = &#34;on&#34;
+                color[3] = &#34;#FFFFFF&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;5&#39;:
+            if buttonSts_p1[4] == &#34;on&#34;:
+                buttonSts_p1[4] = &#34;off&#34;
+                color[4] = &#34;#333333&#34;
+            else:
+                buttonSts_p1[4] = &#34;on&#34;
+                color[4] = &#34;#FFFFFF&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;6&#39;:
+            if buttonSts_p1[5] == &#34;on&#34;:
+                buttonSts_p1[5] = &#34;off&#34;
+                color[5] = &#34;#333333&#34;
+            else:
+                buttonSts_p1[5] = &#34;on&#34;
+                color[5] = &#34;#FFFFFF&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;7&#39;:
+            if buttonSts_p1[6] == &#34;on&#34;:
+                buttonSts_p1[6] = &#34;off&#34;
+                color[6] = &#34;#333333&#34;
+            else:
+                buttonSts_p1[6] = &#34;on&#34;
+                color[6] = &#34;#FFFFFF&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;8&#39;:
+            if buttonSts_p1[7] == &#34;on&#34;:
+                buttonSts_p1[7] = &#34;off&#34;
+                color[7] = &#34;#333333&#34;
+            else:
+                buttonSts_p1[7] = &#34;on&#34;
+                color[7] = &#34;#FFFFFF&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;page_2&#39;:
+            return redirect(url_for(&#39;page2&#39;))
+        else:
+            pass
+
+        gpio_modif()
+
+    return render_template(&#39;page1.html&#39;, button=buttonSts_p1, color=color, time=current_time, warning=warning)
+
+@app.route(&#34;/page2&#34;, methods = [&#39;POST&#39;, &#39;GET&#39;])
+def page2():
+    &#34;&#34;&#34;
+    page2
+
+    The page2 show on the left a map of the lights and on the right 9 buttons.
+
+    Parameters
+    ----------
+    ...
+
+    Returns
+    ----------
+    page2.html : str
+        Page page1 in html and (css).
+    button : list
+        List of the state of the buttons.
+    color : list
+        List of neon colors on the map.
+    time : str
+        The current time.
+    warning : str
+        The différent warning.
+    &#34;&#34;&#34;
+    current_time = getTime()
+
+    #check the id for the session and redirect to loggin.
+    if session.get(&#34;user_id&#34;) == None:
+        return redirect(url_for(&#39;login&#39;))
+
+    if request.method == &#39;POST&#39;:
+        if request.form[&#39;button_p1&#39;] == &#39;1&#39;:
+            buttonSts_p2[0] = &#34;on&#34;
+            for i in range(8):
+                buttonSts_p1[i] = &#34;on&#34;
+                color[i] = &#34;#FFFFFF&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;2&#39;:
+            buttonSts_p2[1] = &#34;off&#34;
+            for i in range(8):
+                buttonSts_p1[i] = &#34;off&#34;
+                buttonSts_p2[i] = &#34;off&#34;
+                color[i] = &#34;#333333&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;3&#39;:
+            buttonSts_p2[0] = &#34;off&#34;
+            buttonSts_p2[1] = &#34;off&#34;
+
+            for i in range(0, 8, 2):
+                color[i] = &#34;#FFFFFF&#34;
+                color[i + 1] = &#34;#333333&#34;
+
+                buttonSts_p1[i] = &#34;on&#34;
+                buttonSts_p1[i + 1] = &#34;off&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;4&#39;:
+            buttonSts_p2[0] = &#34;off&#34;
+            buttonSts_p2[1] = &#34;off&#34;
+
+            for i in range(0, 8):
+                if i &lt; 3:
+                    color[i] = &#34;#FFFFFF&#34;
+                    buttonSts_p1[i] = &#34;on&#34;
+                else :
+                    color[i] = &#34;#333333&#34;
+                    buttonSts_p1[i] = &#34;off&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;5&#39;:
+            buttonSts_p2[0] = &#34;off&#34;
+            buttonSts_p2[1] = &#34;off&#34;
+
+            for i in range(0, 8):
+                if i &gt; 3 and i != 7:
+                    color[i] = &#34;#FFFFFF&#34;
+                    buttonSts_p1[i] = &#34;on&#34;
+                else:
+                    color[i] = &#34;#333333&#34;
+                    buttonSts_p1[i] = &#34;off&#34;
+
+        elif request.form[&#39;button_p1&#39;] == &#39;page_1&#39;:
+            return redirect(url_for(&#39;page1&#39;))
+        else:
+            pass
+
+        gpio_modif()
+
+
+    return render_template(&#39;page2.html&#39;, button=buttonSts_p2, color=color, time=current_time, warning=warning)
+
+@app.route(&#34;/settings&#34;, methods = [&#39;POST&#39;, &#39;GET&#39;])
+def settings():
+    &#34;&#34;&#34;
+    settings
+
+    The settings page can only be acces via admin login.
+
+    Parameters
+    ----------
+    ...
+
+    Returns
+    ----------
+    settings.html : str
+        Page page1 in html and (css).
+    time : str
+        The current time.
+    warning : str
+        The différent warning.
+    &#34;&#34;&#34;
+
+    &#34;&#34;&#34;
+    Get the id for the session.
+    If == None --&gt; go to login.
+    If == 3 (local) --&gt; go to page 1.
+    If == 1 (elo) --&gt; remove the id / error 418.
+    &#34;&#34;&#34;
+    id = session.get(&#34;user_id&#34;)
+
+    if id is None:
+        return redirect(url_for(&#39;login&#39;))
+    elif id == 3:
+        return redirect(url_for(&#39;page1&#39;))
+    elif id == 1:
+        session.pop(&#34;user_id&#34;)
+        abort(418) # 🍵
+
+    current_time = getTime()
+
+    # Check all settings via a form
+    # Settings :
+    #           Auto on  -&gt; turn on at a certain time
+    #           Auto off -&gt; turn off at a certain time
+    if request.method == &#39;POST&#39;:
+        check1 = request.form.get(&#39;Auto on&#39;)
+        time1 = request.form.get(&#39;time Auto on&#39;)
+        check2 = request.form.get(&#39;Auto off&#39;)
+        time2 = request.form.get(&#39;time Auto off&#39;)
+
+        file = open(path_to_csv, &#34;w&#34;, newline=&#39;&#39;)
+        header = [&#39;name&#39;,&#39;state&#39;,&#39;param1&#39;]
+        csvf = csv.DictWriter(file, fieldnames=header)
+
+        csvf.writeheader()
+        csvf.writerow({&#39;name&#39;: &#39;Auto on&#39;, &#39;state&#39;: check1, &#39;param1&#39;: time1})
+        csvf.writerow({&#39;name&#39;: &#39;Auto off&#39;, &#39;state&#39;: check2, &#39;param1&#39;: time2})
+
+        file.close()
+
+        return redirect(url_for(&#39;page1&#39;))
+
+    with open(path_to_csv, &#34;r&#34;) as f:
+        csvreader = csv.reader(f)
+        header = next(csvreader)
+        rows = []
+        for row in csvreader:
+            rows.append(row)
+
+    f.close()
+
+    return render_template(&#39;settings.html&#39;, time=current_time, settings=rows, warning=warning)
+
+@app.before_first_request
+def activate_job():
+    &#34;&#34;&#34;
+    activate_job
+
+    Fonction to run job on backround of the web server (with thread)
+
+    Parameters
+    ----------
+    ...
+
+    Returns
+    ----------
+    ...
+    &#34;&#34;&#34;
+    def run_job():
+        &#34;&#34;&#34;
+        run_job
+
+        Run background job (run every minute).
+        Auto - on/off
+        Check temperature of the Raspberry Pi
+
+        Parameters
+        ----------
+        ...
+
+        Returns
+        ----------
+        ...
+        &#34;&#34;&#34;
+
+        logging.debug(&#34;starting while loop&#34;)
+        while True:
+            t = getTime()
+
+            with open(path_to_csv, &#34;r&#34;) as f:
+                csvreader = csv.reader(f)
+                header = next(csvreader)
+                rows = []
+                for row in csvreader:
+                    rows.append(row)
+            f.close()
+
+            &#34;&#34;&#34;
+            if day is on monday to friday (0 to 4 // 0 is monday)
+            check for auto all on / off.
+            &#34;&#34;&#34;
+            day = datetime.datetime.today().weekday()
+            if rows[0][1] == &#39;on&#39; and t == rows[0][2] and day &lt; 5:
+                logging.info(&#34;All light ON Automaticly&#34;)
+                buttonSts_p2[0] = &#34;on&#34;
+                for i in range(8):
+                    buttonSts_p1[i] = &#34;on&#34;
+                    color[i] = &#34;#FFFFFF&#34;
+                gpio_modif()
+
+            if rows[1][1] == &#39;on&#39; and t == rows[1][2] and day &lt; 5:
+                logging.info(&#34;All light ON Automaticly&#34;)
+                buttonSts_p2[1] = &#34;off&#34;
+                for i in range(8):
+                    buttonSts_p1[i] = &#34;off&#34;
+                    buttonSts_p2[i] = &#34;off&#34;
+                    color[i] = &#34;#333333&#34;
+                gpio_modif()
+
+            #Check temperature warning
+            if rpi:
+                with open(&#39;/sys/class/thermal/thermal_zone0/temp&#39;, &#39;r&#39;) as ftemp:
+                    global warning
+                    temp = int(ftemp.read()) / 1000
+                    if temp &gt; 60:
+                        logging.warning(&#34;Temp = &#34; + str(int(temp)) + &#34;°&#34;)
+                        warning = &#34;Temp = &#34; + str(int(temp)) + &#34;°&#34;
+                    else:
+                        warning = &#34;&#34;
+
+            time.sleep(60)
+
+    thread = threading.Thread(target=run_job)
+    thread.start()
+
+if __name__ == &#34;__main__&#34;:
+    logging.info(&#34; *** Strating server *** &#34;)
+    app.run(host=&#39;0.0.0.0&#39;, port=80, debug=False)
+    GPIO.cleanup()</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-variables">Global variables</h2>
+<dl>
+<dt id="main.authorize_ip"><code class="name">var <span class="ident">authorize_ip</span></code></dt>
+<dd>
+<div class="desc"><p>Ip of the server (for the local user) use to skip authentication.</p></div>
+</dd>
+<dt id="main.buttonSts_p1"><code class="name">var <span class="ident">buttonSts_p1</span></code></dt>
+<dd>
+<div class="desc"><p>value of all the page1 buttons</p></div>
+</dd>
+<dt id="main.buttonSts_p2"><code class="name">var <span class="ident">buttonSts_p2</span></code></dt>
+<dd>
+<div class="desc"><p>value of all the page2 buttons</p></div>
+</dd>
+<dt id="main.color"><code class="name">var <span class="ident">color</span></code></dt>
+<dd>
+<div class="desc"><p>color of the 8 neon</p></div>
+</dd>
+<dt id="main.rpi"><code class="name">var <span class="ident">rpi</span></code></dt>
+<dd>
+<div class="desc"><p>rpi is used to know if the programm is running on a Raspberry Pi or not. </p>
+<p>rpi = True &ndash;&gt; run on Raspberry Pi. </p>
+<p>esle : False</p></div>
+</dd>
+<dt id="main.users"><code class="name">var <span class="ident">users</span></code></dt>
+<dd>
+<div class="desc"><p>user :
+elo - basic user / can only modifie light
+admin - all acces (settings acces)
+local - only used for the raspberry why the tuchscreen (server) / can't acces to settings / don't have to login.</p></div>
+</dd>
+<dt id="main.warning"><code class="name">var <span class="ident">warning</span></code></dt>
+<dd>
+<div class="desc"><p>warning from the app to the server</p></div>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="main.activate_job"><code class="name flex">
+<span>def <span class="ident">activate_job</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>activate_job</p>
+<p>Fonction to run job on backround of the web server (with thread)</p>
+<h2 id="parameters">Parameters</h2>
+<p>&hellip;</p>
+<h2 id="returns">Returns</h2>
+<p>&hellip;</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.before_first_request
+def activate_job():
+    &#34;&#34;&#34;
+    activate_job
+
+    Fonction to run job on backround of the web server (with thread)
+
+    Parameters
+    ----------
+    ...
+
+    Returns
+    ----------
+    ...
+    &#34;&#34;&#34;
+    def run_job():
+        &#34;&#34;&#34;
+        run_job
+
+        Run background job (run every minute).
+        Auto - on/off
+        Check temperature of the Raspberry Pi
+
+        Parameters
+        ----------
+        ...
+
+        Returns
+        ----------
+        ...
+        &#34;&#34;&#34;
+
+        logging.debug(&#34;starting while loop&#34;)
+        while True:
+            t = getTime()
+
+            with open(path_to_csv, &#34;r&#34;) as f:
+                csvreader = csv.reader(f)
+                header = next(csvreader)
+                rows = []
+                for row in csvreader:
+                    rows.append(row)
+            f.close()
+
+            &#34;&#34;&#34;
+            if day is on monday to friday (0 to 4 // 0 is monday)
+            check for auto all on / off.
+            &#34;&#34;&#34;
+            day = datetime.datetime.today().weekday()
+            if rows[0][1] == &#39;on&#39; and t == rows[0][2] and day &lt; 5:
+                logging.info(&#34;All light ON Automaticly&#34;)
+                buttonSts_p2[0] = &#34;on&#34;
+                for i in range(8):
+                    buttonSts_p1[i] = &#34;on&#34;
+                    color[i] = &#34;#FFFFFF&#34;
+                gpio_modif()
+
+            if rows[1][1] == &#39;on&#39; and t == rows[1][2] and day &lt; 5:
+                logging.info(&#34;All light ON Automaticly&#34;)
+                buttonSts_p2[1] = &#34;off&#34;
+                for i in range(8):
+                    buttonSts_p1[i] = &#34;off&#34;
+                    buttonSts_p2[i] = &#34;off&#34;
+                    color[i] = &#34;#333333&#34;
+                gpio_modif()
+
+            #Check temperature warning
+            if rpi:
+                with open(&#39;/sys/class/thermal/thermal_zone0/temp&#39;, &#39;r&#39;) as ftemp:
+                    global warning
+                    temp = int(ftemp.read()) / 1000
+                    if temp &gt; 60:
+                        logging.warning(&#34;Temp = &#34; + str(int(temp)) + &#34;°&#34;)
+                        warning = &#34;Temp = &#34; + str(int(temp)) + &#34;°&#34;
+                    else:
+                        warning = &#34;&#34;
+
+            time.sleep(60)
+
+    thread = threading.Thread(target=run_job)
+    thread.start()</code></pre>
+</details>
+</dd>
+<dt id="main.getTime"><code class="name flex">
+<span>def <span class="ident">getTime</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Get time on format : HH:MM</p>
+<h2 id="parameters">Parameters</h2>
+<p>&hellip;</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><strong><code>current_time</code></strong> :&ensp;<code>str</code></dt>
+<dd>The current time in format HH:MM</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getTime():
+    &#34;&#34;&#34;
+    Get time on format : HH:MM
+
+    Parameters
+    ----------
+    ...
+
+    Returns
+    ----------
+    current_time : str
+        The current time in format HH:MM
+    &#34;&#34;&#34;
+    t = time.localtime()
+    current_time = time.strftime(&#34;%H:%M&#34;, t)
+
+    return current_time</code></pre>
+</details>
+</dd>
+<dt id="main.gpio_modif"><code class="name flex">
+<span>def <span class="ident">gpio_modif</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>modif all the GPIO by looking into buttonSts_p1[]</p>
+<h2 id="parameters">Parameters</h2>
+<p>&hellip;</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def gpio_modif():
+    &#34;&#34;&#34;
+    modif all the GPIO by looking into buttonSts_p1[]
+
+    Parameters
+    ----------
+    ...
+    &#34;&#34;&#34;
+    if rpi:
+        for i in range(8):
+            if buttonSts_p1[i] == &#34;off&#34;:
+                #OFF
+                GPIO.output(i, 0)
+            else:
+                #ON
+                GPIO.output(i, 1)
+                #time.sleep(1)     #security time for fuses
+    else:
+        pass</code></pre>
+</details>
+</dd>
+<dt id="main.handle_exception"><code class="name flex">
+<span>def <span class="ident">handle_exception</span></span>(<span>e)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>handle_exception : all http error are show on the 404.html page</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.errorhandler(HTTPException)
+def handle_exception(e):
+    &#34;&#34;&#34;handle_exception : all http error are show on the 404.html page&#34;&#34;&#34;
+    e = str(e) #404 not ...  :  The request URL ...
+    code = e.split(&#34;:&#34;) #404 Not Found
+
+    return render_template(&#39;404.html&#39;, error=code[1], title=code[0]), code[0][0:3]</code></pre>
+</details>
+</dd>
+<dt id="main.login"><code class="name flex">
+<span>def <span class="ident">login</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>login page</p>
+<p>Receive from POST : username / password
+We first check if username existe and after password.
+If it's a bad username or pass we flash the error.</p>
+<h2 id="parameters">Parameters</h2>
+<p>&hellip;</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>login.html : str</code></dt>
+<dd>Page login in html and (css).</dd>
+<dt><strong><code>time</code></strong> :&ensp;<code>str</code></dt>
+<dd>The current time.</dd>
+<dt><strong><code>warning</code></strong> :&ensp;<code>str</code></dt>
+<dd>The différent warning.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.route(&#34;/login&#34;, methods=[&#39;POST&#39;, &#39;GET&#39;])
+@app.route(&#34;/&#34;, methods=[&#39;POST&#39;, &#39;GET&#39;])
+def login():
+    &#34;&#34;&#34;
+    login page
+
+    Receive from POST : username / password
+    We first check if username existe and after password.
+    If it&#39;s a bad username or pass we flash the error.
+
+    Parameters
+    ----------
+    ...
+
+    Returns
+    ----------
+    login.html : str
+        Page login in html and (css).
+    time : str
+        The current time.
+    warning : str
+        The différent warning.
+    &#34;&#34;&#34;
+    current_time = getTime()
+    ip = request.environ.get(&#39;HTTP_X_REAL_IP&#39;, request.remote_addr)
+
+    #check for autorized ip
+    for i in authorize_ip:
+        if ip == i:
+            logging.info(&#34;creat local user&#34; + str(ip))
+            session[&#39;user_id&#39;] = 3
+            return redirect(url_for(&#39;page1&#39;))
+
+    #if already login
+    if session.get(&#34;user_id&#34;) is not None:
+        return redirect(url_for(&#39;page1&#39;))
+
+    if request.method == &#39;POST&#39;:
+        session.pop(&#39;user_id&#39;, None)
+
+        username = request.form[&#39;username&#39;]
+        password = request.form[&#39;password&#39;]
+
+        try:
+            user = [x for x in users if x.username == username][0]
+            if user and user.password == password:
+                session[&#39;user_id&#39;] = user.id
+                logging.info(&#34;New login username : &#34; + username + &#34; ip : &#34; + str(ip))
+                #Login accepted
+                return redirect(url_for(&#39;page1&#39;))
+            elif user.password != password:
+                #bad password / log it / and flash the error
+                logging.warning(&#34;bad password : &#34; + username + &#34; ip : &#34; + str(ip))
+                flash(&#34;Bad password&#34;)
+
+            return redirect(url_for(&#39;login&#39;))
+
+        except:
+            #bad username / log it / and flash the error
+            logging.warning(&#34;bad username : &#34; + username + &#34; ip : &#34; + str(ip))
+            flash(&#34;Bad username&#34;)
+            return redirect(url_for(&#39;login&#39;))
+
+    return render_template(&#34;login.html&#34;, time=current_time, warning=warning)</code></pre>
+</details>
+</dd>
+<dt id="main.page1"><code class="name flex">
+<span>def <span class="ident">page1</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>page1</p>
+<p>The page1 show on the left a map of the lights and on the right 9 buttons.</p>
+<h2 id="parameters">Parameters</h2>
+<p>&hellip;</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>page1.html : str</code></dt>
+<dd>Page page1 in html and (css).</dd>
+<dt><strong><code>button</code></strong> :&ensp;<code>list</code></dt>
+<dd>List of the state of the buttons.</dd>
+<dt><strong><code>color</code></strong> :&ensp;<code>list</code></dt>
+<dd>List of neon colors on the map.</dd>
+<dt><strong><code>time</code></strong> :&ensp;<code>str</code></dt>
+<dd>The current time.</dd>
+<dt><strong><code>warning</code></strong> :&ensp;<code>str</code></dt>
+<dd>The différent warning.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.route(&#34;/page1&#34;, methods = [&#39;POST&#39;, &#39;GET&#39;])
+def page1():
+    &#34;&#34;&#34;
+    page1
+
+    The page1 show on the left a map of the lights and on the right 9 buttons.
+
+    Parameters
+    ----------
+    ...
+
+    Returns
+    ----------
+    page1.html : str
+        Page page1 in html and (css).
+    button : list
+        List of the state of the buttons.
+    color : list
+        List of neon colors on the map.
+    time : str
+        The current time.
+    warning : str
+        The différent warning.
+    &#34;&#34;&#34;
+    current_time = getTime()
+
+    # check the id for the session and redirect to loggin.
+    if session.get(&#34;user_id&#34;) == None:
+        return redirect(url_for(&#39;login&#39;))
+
+    if all(elem == &#34;on&#34; for elem in buttonSts_p1):
+        buttonSts_p2[0] = &#34;on&#34;
+    else:
+        buttonSts_p2[0] = &#34;off&#34;
+
+    if request.method == &#39;POST&#39;:
+        if request.form[&#39;button_p1&#39;] == &#39;1&#39;:
+            if buttonSts_p1[0] == &#34;on&#34;:
+                buttonSts_p1[0] = &#34;off&#34;
+                color[0] = &#34;#333333&#34;
+            else:
+                buttonSts_p1[0] = &#34;on&#34;
+                color[0] = &#34;#FFFFFF&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;2&#39;:
+            if buttonSts_p1[1] == &#34;on&#34;:
+                buttonSts_p1[1] = &#34;off&#34;
+                color[1] = &#34;#333333&#34;
+            else:
+                buttonSts_p1[1] = &#34;on&#34;
+                color[1] = &#34;#FFFFFF&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;3&#39;:
+            if buttonSts_p1[2] == &#34;on&#34;:
+                buttonSts_p1[2] = &#34;off&#34;
+                color[2] = &#34;#333333&#34;
+            else:
+                buttonSts_p1[2] = &#34;on&#34;
+                color[2] = &#34;#FFFFFF&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;4&#39;:
+            if buttonSts_p1[3] == &#34;on&#34;:
+                buttonSts_p1[3] = &#34;off&#34;
+                color[3] = &#34;#333333&#34;
+            else:
+                buttonSts_p1[3] = &#34;on&#34;
+                color[3] = &#34;#FFFFFF&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;5&#39;:
+            if buttonSts_p1[4] == &#34;on&#34;:
+                buttonSts_p1[4] = &#34;off&#34;
+                color[4] = &#34;#333333&#34;
+            else:
+                buttonSts_p1[4] = &#34;on&#34;
+                color[4] = &#34;#FFFFFF&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;6&#39;:
+            if buttonSts_p1[5] == &#34;on&#34;:
+                buttonSts_p1[5] = &#34;off&#34;
+                color[5] = &#34;#333333&#34;
+            else:
+                buttonSts_p1[5] = &#34;on&#34;
+                color[5] = &#34;#FFFFFF&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;7&#39;:
+            if buttonSts_p1[6] == &#34;on&#34;:
+                buttonSts_p1[6] = &#34;off&#34;
+                color[6] = &#34;#333333&#34;
+            else:
+                buttonSts_p1[6] = &#34;on&#34;
+                color[6] = &#34;#FFFFFF&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;8&#39;:
+            if buttonSts_p1[7] == &#34;on&#34;:
+                buttonSts_p1[7] = &#34;off&#34;
+                color[7] = &#34;#333333&#34;
+            else:
+                buttonSts_p1[7] = &#34;on&#34;
+                color[7] = &#34;#FFFFFF&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;page_2&#39;:
+            return redirect(url_for(&#39;page2&#39;))
+        else:
+            pass
+
+        gpio_modif()
+
+    return render_template(&#39;page1.html&#39;, button=buttonSts_p1, color=color, time=current_time, warning=warning)</code></pre>
+</details>
+</dd>
+<dt id="main.page2"><code class="name flex">
+<span>def <span class="ident">page2</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>page2</p>
+<p>The page2 show on the left a map of the lights and on the right 9 buttons.</p>
+<h2 id="parameters">Parameters</h2>
+<p>&hellip;</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>page2.html : str</code></dt>
+<dd>Page page1 in html and (css).</dd>
+<dt><strong><code>button</code></strong> :&ensp;<code>list</code></dt>
+<dd>List of the state of the buttons.</dd>
+<dt><strong><code>color</code></strong> :&ensp;<code>list</code></dt>
+<dd>List of neon colors on the map.</dd>
+<dt><strong><code>time</code></strong> :&ensp;<code>str</code></dt>
+<dd>The current time.</dd>
+<dt><strong><code>warning</code></strong> :&ensp;<code>str</code></dt>
+<dd>The différent warning.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.route(&#34;/page2&#34;, methods = [&#39;POST&#39;, &#39;GET&#39;])
+def page2():
+    &#34;&#34;&#34;
+    page2
+
+    The page2 show on the left a map of the lights and on the right 9 buttons.
+
+    Parameters
+    ----------
+    ...
+
+    Returns
+    ----------
+    page2.html : str
+        Page page1 in html and (css).
+    button : list
+        List of the state of the buttons.
+    color : list
+        List of neon colors on the map.
+    time : str
+        The current time.
+    warning : str
+        The différent warning.
+    &#34;&#34;&#34;
+    current_time = getTime()
+
+    #check the id for the session and redirect to loggin.
+    if session.get(&#34;user_id&#34;) == None:
+        return redirect(url_for(&#39;login&#39;))
+
+    if request.method == &#39;POST&#39;:
+        if request.form[&#39;button_p1&#39;] == &#39;1&#39;:
+            buttonSts_p2[0] = &#34;on&#34;
+            for i in range(8):
+                buttonSts_p1[i] = &#34;on&#34;
+                color[i] = &#34;#FFFFFF&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;2&#39;:
+            buttonSts_p2[1] = &#34;off&#34;
+            for i in range(8):
+                buttonSts_p1[i] = &#34;off&#34;
+                buttonSts_p2[i] = &#34;off&#34;
+                color[i] = &#34;#333333&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;3&#39;:
+            buttonSts_p2[0] = &#34;off&#34;
+            buttonSts_p2[1] = &#34;off&#34;
+
+            for i in range(0, 8, 2):
+                color[i] = &#34;#FFFFFF&#34;
+                color[i + 1] = &#34;#333333&#34;
+
+                buttonSts_p1[i] = &#34;on&#34;
+                buttonSts_p1[i + 1] = &#34;off&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;4&#39;:
+            buttonSts_p2[0] = &#34;off&#34;
+            buttonSts_p2[1] = &#34;off&#34;
+
+            for i in range(0, 8):
+                if i &lt; 3:
+                    color[i] = &#34;#FFFFFF&#34;
+                    buttonSts_p1[i] = &#34;on&#34;
+                else :
+                    color[i] = &#34;#333333&#34;
+                    buttonSts_p1[i] = &#34;off&#34;
+        elif request.form[&#39;button_p1&#39;] == &#39;5&#39;:
+            buttonSts_p2[0] = &#34;off&#34;
+            buttonSts_p2[1] = &#34;off&#34;
+
+            for i in range(0, 8):
+                if i &gt; 3 and i != 7:
+                    color[i] = &#34;#FFFFFF&#34;
+                    buttonSts_p1[i] = &#34;on&#34;
+                else:
+                    color[i] = &#34;#333333&#34;
+                    buttonSts_p1[i] = &#34;off&#34;
+
+        elif request.form[&#39;button_p1&#39;] == &#39;page_1&#39;:
+            return redirect(url_for(&#39;page1&#39;))
+        else:
+            pass
+
+        gpio_modif()
+
+
+    return render_template(&#39;page2.html&#39;, button=buttonSts_p2, color=color, time=current_time, warning=warning)</code></pre>
+</details>
+</dd>
+<dt id="main.settings"><code class="name flex">
+<span>def <span class="ident">settings</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>settings</p>
+<p>The settings page can only be acces via admin login.</p>
+<h2 id="parameters">Parameters</h2>
+<p>&hellip;</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>settings.html : str</code></dt>
+<dd>Page page1 in html and (css).</dd>
+<dt><strong><code>time</code></strong> :&ensp;<code>str</code></dt>
+<dd>The current time.</dd>
+<dt><strong><code>warning</code></strong> :&ensp;<code>str</code></dt>
+<dd>The différent warning.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.route(&#34;/settings&#34;, methods = [&#39;POST&#39;, &#39;GET&#39;])
+def settings():
+    &#34;&#34;&#34;
+    settings
+
+    The settings page can only be acces via admin login.
+
+    Parameters
+    ----------
+    ...
+
+    Returns
+    ----------
+    settings.html : str
+        Page page1 in html and (css).
+    time : str
+        The current time.
+    warning : str
+        The différent warning.
+    &#34;&#34;&#34;
+
+    &#34;&#34;&#34;
+    Get the id for the session.
+    If == None --&gt; go to login.
+    If == 3 (local) --&gt; go to page 1.
+    If == 1 (elo) --&gt; remove the id / error 418.
+    &#34;&#34;&#34;
+    id = session.get(&#34;user_id&#34;)
+
+    if id is None:
+        return redirect(url_for(&#39;login&#39;))
+    elif id == 3:
+        return redirect(url_for(&#39;page1&#39;))
+    elif id == 1:
+        session.pop(&#34;user_id&#34;)
+        abort(418) # 🍵
+
+    current_time = getTime()
+
+    # Check all settings via a form
+    # Settings :
+    #           Auto on  -&gt; turn on at a certain time
+    #           Auto off -&gt; turn off at a certain time
+    if request.method == &#39;POST&#39;:
+        check1 = request.form.get(&#39;Auto on&#39;)
+        time1 = request.form.get(&#39;time Auto on&#39;)
+        check2 = request.form.get(&#39;Auto off&#39;)
+        time2 = request.form.get(&#39;time Auto off&#39;)
+
+        file = open(path_to_csv, &#34;w&#34;, newline=&#39;&#39;)
+        header = [&#39;name&#39;,&#39;state&#39;,&#39;param1&#39;]
+        csvf = csv.DictWriter(file, fieldnames=header)
+
+        csvf.writeheader()
+        csvf.writerow({&#39;name&#39;: &#39;Auto on&#39;, &#39;state&#39;: check1, &#39;param1&#39;: time1})
+        csvf.writerow({&#39;name&#39;: &#39;Auto off&#39;, &#39;state&#39;: check2, &#39;param1&#39;: time2})
+
+        file.close()
+
+        return redirect(url_for(&#39;page1&#39;))
+
+    with open(path_to_csv, &#34;r&#34;) as f:
+        csvreader = csv.reader(f)
+        header = next(csvreader)
+        rows = []
+        for row in csvreader:
+            rows.append(row)
+
+    f.close()
+
+    return render_template(&#39;settings.html&#39;, time=current_time, settings=rows, warning=warning)</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="main.User"><code class="flex name class">
+<span>class <span class="ident">User</span></span>
+<span>(</span><span>id, username, password)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>User : creat different user for the login.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>id</code></strong> :&ensp;<code>int</code></dt>
+<dd>A basic id for eache login.</dd>
+<dt><strong><code>username</code></strong> :&ensp;<code>str</code></dt>
+<dd>The username for the login.</dd>
+<dt><strong><code>password</code></strong> :&ensp;<code>str</code></dt>
+<dd>The password of the login.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class User:
+    &#34;&#34;&#34;
+    User : creat different user for the login.
+    &#34;&#34;&#34;
+    def __init__(self, id, username, password):
+        &#34;&#34;&#34;
+        Parameters
+        ----------
+        id : int
+            A basic id for eache login.
+        username : str
+            The username for the login.
+        password : str
+            The password of the login.
+        &#34;&#34;&#34;
+        self.id = id
+        self.username = username
+        self.password = password</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-variables">Global variables</a></h3>
+<ul class="two-column">
+<li><code><a title="main.authorize_ip" href="#main.authorize_ip">authorize_ip</a></code></li>
+<li><code><a title="main.buttonSts_p1" href="#main.buttonSts_p1">buttonSts_p1</a></code></li>
+<li><code><a title="main.buttonSts_p2" href="#main.buttonSts_p2">buttonSts_p2</a></code></li>
+<li><code><a title="main.color" href="#main.color">color</a></code></li>
+<li><code><a title="main.rpi" href="#main.rpi">rpi</a></code></li>
+<li><code><a title="main.users" href="#main.users">users</a></code></li>
+<li><code><a title="main.warning" href="#main.warning">warning</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="two-column">
+<li><code><a title="main.activate_job" href="#main.activate_job">activate_job</a></code></li>
+<li><code><a title="main.getTime" href="#main.getTime">getTime</a></code></li>
+<li><code><a title="main.gpio_modif" href="#main.gpio_modif">gpio_modif</a></code></li>
+<li><code><a title="main.handle_exception" href="#main.handle_exception">handle_exception</a></code></li>
+<li><code><a title="main.login" href="#main.login">login</a></code></li>
+<li><code><a title="main.page1" href="#main.page1">page1</a></code></li>
+<li><code><a title="main.page2" href="#main.page2">page2</a></code></li>
+<li><code><a title="main.settings" href="#main.settings">settings</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="main.User" href="#main.User">User</a></code></h4>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>

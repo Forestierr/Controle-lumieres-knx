@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="refresh" content="60">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="black">
+
+    <meta name="author" content="Robin Forestier">
+    <meta name="description" content="Page 2 - controle des lumières en knx - loggin page">
+
+    <title>Light Control</title>
+    <link rel="icon" type="image/x-icon" href="/static/img/LogoElo.ico">
+    <link rel="shortcut icon" href="/static/img/LogoElo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/login.css/">
+</head>
+<body>
+    <div class="header">
+        <a href="#"> <img class="logo_img" src="/static/img/logo.png" alt="logo" width="75%"> </a>
+        <p> {{ time }} </p>
+		<p class="warning"> {{ warning }} </p>
+        <h1>ELO Light Control</h1>
+    </div>
+
+    <div class="log">
+        <h2> Login </h2>
+
+        <form method="post">
+            <div class="user">
+                <input type="text" id="username" name="username" required="">
+                <label>Username</label>
+            </div>
+
+            <div class="user">
+                <input type="password" id="password" name="password" required="">
+                <label>Password</label>
+            </div>
+
+            <button class="btn" type="submit" name="button_p1"> Login </button>
+        </form>
+    </div>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="error">
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        </div>
+    {% endif %}
+    {% endwith %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,219 @@
+/* login.css | ../static/login.css | Robin Forestier | 12.2021
+ * used for login.html on ../templates/login.html
+ */
+
+html {
+    height: 100%;
+}
+
+body {
+    padding 0;
+    margin: 0;
+    background: linear-gradient(to bottom right,#333 0%, #777 100%);
+}
+
+.header {
+    float: left;
+    width: 100%;
+    height: auto;
+    line-height: 25px;
+    background: #333;
+    color: white;
+    vertical-align: middle;
+}
+
+.header h1 {
+    margin-left: 10px;
+}
+
+.header p {
+    float: right;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.header a {
+    margin-top: 10px;
+    float: right;
+}
+
+.warning {
+    color: #F00;
+}
+
+/* Login BOX */
+
+.log {
+    position: absolute;
+    /* Centrage */
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    /* background transparent mais plus foncé */
+    background: rgba(0,0,0,.2);
+    /* BOX */
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    padding: 40px;
+    border-radius: 15px;
+}
+
+/* Titre Login */
+h2 {
+    color: #FFF;
+    font-size: 30pt;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.log .user {
+  position: relative;
+}
+
+.log .user input{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #FFF;
+  margin-bottom: 30px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #FFF;
+  background: transparent;
+}
+
+.log .user label {
+  position: absolute;
+  top:  0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 18px;
+  color: #FFF;
+  pointer-events: none;
+  transition: .5s;
+}
+
+/* animation text */
+.log .user input:focus ~ label,
+.log .user input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #999;
+  font-size: 14px;
+}
+
+/* Bouton login */
+
+.btn {
+    width: 130px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    background: #555;
+    font-size: 18pt;
+    margin-top: 30px;
+    border-radius: 4px;
+    position: relative;
+    transition: 1s;
+}
+
+/* color change when mouse is hover */
+.btn:hover {
+    background:#999;
+}
+
+/* border gradient */
+.btn:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom right, #444 20%, #777 90%);
+    z-index: -1;
+    margin: -4px;
+    border-radius: 8px;
+}
+
+.error {
+    position: absolute;
+
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+
+    font-size: 25px;
+    color: #FFF;
+
+    box-shadow: inset -2px -3px rgba(255, 255, 255, 0.2);
+
+
+    padding-left: 70px;
+
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    border-radius: 15px;
+    background: rgba(255, 0, 0, 0.6);
+}
+
+.error:after {
+    content: "⚠";
+    font-size: 30px;
+
+    text-align: center;
+    line-height: 35px;
+
+    position:absolute;
+    width: 40px;
+    height: 40px;
+
+    left: 10px;
+    top: 5px;
+
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff !important;
+}
+
+
+/* Only for raspberry pi screen (res : 800px / 480px ) */
+@media all and (max-width: 800px) and (max-height: 480px) and (min-width: 799px){
+    * {
+        cursor: none;
+    }
+}
+
+@media only screen and (hover: none) and (pointer: coarse){
+
+    .log {
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 35pt;
+    }
+
+    .log .user input{
+        padding: 12px 0;
+        font-size: 24px;
+    }
+
+    .log .user label {
+        font-size: 25px;
+    }
+}

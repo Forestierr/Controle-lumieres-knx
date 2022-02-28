@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Light Control</title>
+    <link rel="icon" type="image/x-icon" href="/static/img/LogoElo.ico">
+    <link rel="stylesheet" href="../static/login.css/">
+</head>
+<body>
+    <div class="header">
+        <a href="#"> <img class="logo_img" src="/static/img/logo.png" alt="logo" width="75%"> </a>
+        <p> {{ time }} </p>
+		<p class="warning"> {{ warning }} </p>
+        <h1>ELO Light Control</h1>
+    </div>
+
+    <form method="post">
+        <label for="username" style="color: white">Username :</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password" style="color: white">Password :</label><br>
+        <input type="password" id="password" name="password"><br>
+        <button class="btn" type="submit" name="button_p1">
+            <img class="btn_img" src="/static/img/img_plus.png" alt="bt+" width="70px">
+        </button>
+    </form>
+</body>
+</html>

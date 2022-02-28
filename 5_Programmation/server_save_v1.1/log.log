@@ -1,0 +1,24 @@
+2022-01-10 15:55:27,378 - DEBUG - starting while loop
+2022-01-10 15:55:27,379 - INFO - creat local user127.0.0.1
+2022-01-10 15:55:27,406 - WARNING - Temp = 60°
+2022-01-10 16:00:08,366 - DEBUG - starting while loop
+2022-01-10 16:00:08,372 - INFO - creat local user127.0.0.1
+2022-01-10 16:00:08,441 - WARNING - Temp = 60°
+2022-01-10 16:03:55,189 - WARNING - bad username : Elo ip : 172.16.32.200
+2022-01-10 16:07:11,679 - DEBUG - starting while loop
+2022-01-10 16:07:11,680 - INFO - creat local user127.0.0.1
+2022-01-11 07:40:36,656 - DEBUG - starting while loop
+2022-01-11 08:05:24,754 - DEBUG - starting while loop
+2022-01-11 08:05:24,758 - INFO - creat local user127.0.0.1
+2022-01-11 14:57:55,327 - DEBUG - starting while loop
+2022-01-11 14:57:55,476 - DEBUG - starting while loop
+2022-01-11 14:57:55,484 - DEBUG - starting while loop
+2022-01-11 14:57:59,312 - DEBUG - starting while loop
+2022-01-11 14:58:36,958 - INFO - creat local user172.16.32.133
+2022-01-11 15:16:56,331 - DEBUG - starting while loop
+2022-01-11 15:17:17,382 - INFO - creat local user172.16.32.133
+2022-01-11 15:20:33,674 - DEBUG - starting while loop
+2022-01-11 15:21:38,418 - INFO - creat local user172.16.32.133
+2022-01-11 16:13:25,015 - DEBUG - starting while loop
+2022-01-11 16:13:25,016 - INFO - creat local user172.16.32.133
+2022-01-11 16:29:52,476 - INFO - creat local user172.16.32.133

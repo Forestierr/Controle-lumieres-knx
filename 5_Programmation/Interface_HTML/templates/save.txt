@@ -1,0 +1,3 @@
+name, state, parma1
+Auto on,off,07:30
+Auto off,on,18:00

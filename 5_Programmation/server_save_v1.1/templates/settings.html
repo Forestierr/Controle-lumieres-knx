@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="refresh" content="60">
+    <meta charset="UTF-8">
+    <title>Settings</title>
+    <link rel="icon" type="image/x-icon" href="/static/img/LogoElo.ico">
+    <link rel="stylesheet" href="../static/settings.css/">
+</head>
+<body>
+    <div class="header">
+        <a href="/settings"> <img src="/static/img/logo.png" alt="logo" width="75%"> </a>
+        <p> {{ time }} </p>
+		<p class="warning"> {{ warning }} </p>
+        <h1>Settings</h1>
+    </div>
+
+    <div class="content">
+        <div class="form_setting">
+            <form method="post" name="">
+                {% for setting in settings %}
+                    <p> {{ setting[0] }} </p>
+                    {% if setting[1] == 'on' %}
+                        <input type="checkbox" name="{{ setting[0] }}" value="on" class="btn_check" checked>
+                    {% else %}
+                        <input type="checkbox" name="{{ setting[0] }}" value="on" class="btn_check">
+                    {% endif %}
+                    <input type="time" id="appt" name="time {{ setting[0] }}" value="{{ setting[2] }}" required>
+                {% endfor %}
+                </br>
+                </br>
+                <button type="submit" value="Submit" class="btn_submit">Modifier et retour</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

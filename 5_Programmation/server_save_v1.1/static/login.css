@@ -1,0 +1,152 @@
+/* login.css | ../static/login.css | Robin Forestier | 12.2021
+ * used for login.html on ../templates/login.html
+ */
+
+body {
+    margin: 0;
+    background-color: #000000;
+}
+
+.header {
+  float: left;
+  width: 100%;
+  height: auto;
+  line-height: 25px;
+  background-color: #333333;
+  color: white;
+  vertical-align: middle;
+}
+
+.header h1 {
+    margin-left: 10px;
+}
+
+.header p {
+    float: right;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.header a {
+    margin-top: 10px;
+    float: right;
+}
+
+label {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+#username {
+    margin: 5px;
+    margin-left: 15px;
+    background-color: #444444;
+    color: #FFFFFF;
+    padding: 5px;
+    width: 20%;
+}
+
+#password {
+    margin: 5px;
+    margin-left: 15px;
+    background-color: #444444;
+    color: #FFFFFF;
+    padding: 5px;
+    width: 20%;
+}
+
+.btn {
+    margin: 10px;
+    margin-left: 15px;
+    background-color: #000000;
+    border: 0px;
+}
+
+.btn_img {
+    background-color: #00FF00;
+    background-color: #000000;
+    border: 0px;
+    width: 130px;
+}
+
+.warning {
+    color: #F00;
+}
+
+/* Only for raspberry pi screen (res : 800px / 480px ) */
+@media all and (max-width: 800px) and (max-height: 480px) and (min-width: 799px){
+    * {
+        cursor: none;
+    }
+
+    label {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    #username {
+        margin: 5px;
+        margin-left: 15px;
+        background-color: #444444;
+        color: #FFFFFF;
+        width: 50%;
+        font-size: 24px;
+    }
+
+    #password {
+        margin: 5px;
+        margin-left: 15px;
+        background-color: #444444;
+        color: #FFFFFF;
+        width: 50%;
+        font-size: 24px;
+    }
+
+    .btn_img {
+        background-color: #00FF00;
+        margin: 20px;
+        margin-left: 10px;
+        background-color: #000000;
+        border: 0px;
+        width: 100px;
+    }
+}
+
+@media only screen and (hover: none) and (pointer: coarse){
+
+    label {
+        font-size: 40px;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    #username {
+        margin: 5px;
+        margin-left: 15px;
+        background-color: #444444;
+        color: #FFFFFF;
+        width: 50%;
+        font-size: 24px;
+    }
+
+    #password {
+        margin: 5px;
+        margin-left: 15px;
+        background-color: #444444;
+        color: #FFFFFF;
+        width: 50%;
+        font-size: 24px;
+    }
+
+    .btn_img {
+        background-color: #00FF00;
+        margin: 20px;
+        margin-left: 10px;
+        background-color: #000000;
+        border: 0px;
+        width: 100px;
+    }
+
+}

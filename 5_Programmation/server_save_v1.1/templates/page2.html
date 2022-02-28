@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="refresh" content="60">
+    <meta charset="UTF-8">
+    <title>Light Control</title>
+    <link rel="icon" type="image/x-icon" href="/static/img/LogoElo.ico">
+    <link rel="stylesheet" href="../static/style.css/">
+</head>
+<body>
+    <div class="header">
+        <a href="/settings"> <img src="/static/img/logo.png" alt="logo" width="75%"> </a>
+        <p> {{ time }} </p>
+		<p class="warning"> {{ warning }} </p>
+        <h1>ELO Light Control 2</h1>
+    </div>
+
+    <div class="row" id="row">
+        <div class="column-l">
+            <img src="/static/img/plan_vide.png" alt="plan" id="plan" style="display: none">
+            <canvas id="myCanvas" width="356px" height="451px"></canvas>
+            <p> {{ color }}</p>
+            <script>
+                window.onload = function() {
+                  var c = document.getElementById("myCanvas");
+                  var ctx = c.getContext("2d");
+                  var img = document.getElementById("plan");
+                  ctx.drawImage(img, 0, 0);
+
+                  ctx.fillStyle = "{{ color[0] }}";
+                  ctx.fillRect(30, 30, 10, 370);
+                  ctx.fillStyle = "{{ color[1] }}";
+                  ctx.fillRect(83, 30, 10, 370);
+                  ctx.fillStyle = "{{ color[2] }}";
+                  ctx.fillRect(130, 65, 10, 335);
+                  ctx.fillStyle = "{{ color[3] }}";
+                  ctx.fillRect(180, 65, 10, 335);
+                  ctx.fillStyle = "{{ color[4] }}";
+                  ctx.fillRect(240, 65, 10, 245);
+                  ctx.fillStyle = "{{ color[5] }}";
+                  ctx.fillRect(285, 30, 10, 280);
+                  ctx.fillStyle = "{{ color[6] }}";
+                  ctx.fillRect(335, 30, 10, 280);
+                  ctx.fillStyle = "{{ color[7] }}";
+                  ctx.fillRect(140, 30, 100, 10);
+                }
+            </script>
+        </div>
+
+        <form method="post" action="/page2" class="column-r" id="grid">
+            {% for bt in button %}
+                <button class="btn" type="submit" name="button_p1" value={{ loop.index }}>
+                    <img class="btn_img" src={{ bt }} alt="bt1" width="150px">
+                    {% if loop.index == 1 %}
+                        <p class="text_num"> ON </p>
+                    {% elif loop.index == 2 %}
+                        <p class="text_num"> OFF </p>
+                    {% elif loop.index == 3 %}
+                        <p class="text_num"> 1/2 </p>
+                    {% elif loop.index == 4 %}
+                        <p class="text_num"> G </p>
+                    {% elif loop.index == 5 %}
+                        <p class="text_num"> D </p>
+                    {% elif loop.index > 5 and loop.index < 9 %}
+                        <p class="text_num"> N/C </p>
+                    {% else %}
+                        <p class="text_num"> {{ loop.index }} </p>
+                    {% endif %}
+                    {% if bt == "/static/img/img_off.png" %}
+                        <p class="text_on"> OFF </p>
+                    {% else %}
+                        <p class="text_on"> ON </p>
+                    {% endif %}
+                </button>
+            {% endfor %}
+            <button class="btn" type="submit" name="button_p1" value="page_1">
+                <img class="btn_img" src="/static/img/img_plus.png" alt="bt+" width="150px">
+                <p class="text_num" style="visibility: hidden"> + </p>
+                <p class="text_on" style="visibility: hidden"> OFF </p>
+            </button>
+        </form>
+    </div>
+</body>
+</html>

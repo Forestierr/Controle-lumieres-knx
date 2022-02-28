@@ -1,0 +1,220 @@
+/* style.css | ../static/style.css | Robin Forestier | 12.2021
+ * used for page1.html | page2.html on ../templates/
+ */
+
+* {
+
+}
+
+body {
+  margin: 0;
+  background-color: #000000;
+}
+
+.header {
+  float: left;
+  width: 100%;
+  height: auto;
+  line-height: 25px;
+  background-color: #333333;
+  color: white;
+  vertical-align: middle;
+}
+.header h1 {
+    margin-left: 10px;
+}
+
+.header p {
+    float: right;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.header a {
+    margin-top: 10px;
+    float: right;
+}
+
+.column-r {
+  position: relative;
+  z-index: 0;
+  float: center;
+  width: auto;
+  height: 100%;
+  padding: 10px;
+  margin-left: 0px;
+}
+
+.column-l {
+  float: left;
+  width: 35%;
+  height: auto;
+  padding: 5px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+#grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 15% 15% 15%;
+}
+
+.btn {
+  background-color: #000000;
+  margin-top: 10px;
+  border: none;
+}
+
+.text_num {
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    color: white;
+    top: -120px;
+    font-size: 24px;
+}
+
+.text_on {
+    position: relative;
+    z-index: 1;
+    color: white;
+    top: -120px;
+    font-size: 24px;
+}
+
+canvas {
+  width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#plan {
+  width: 80%
+}
+
+.warning {
+    color: #F00;
+}
+
+/* Only for raspberry pi screen (res : 800px / 480px ) */
+@media all and (max-width: 800px) and (max-height: 480px) and (min-width: 799px){
+
+    * {
+        cursor: none;
+     }
+
+    body {
+        overflow-y: hidden;
+    }
+
+    .btn {
+        height: 95px;
+    }
+
+    .btn_img {
+        width: 90%;
+    }
+
+    .text_num {
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+        color: white;
+        top: -100px;
+        font-size: 20px;
+    }
+
+    .text_on {
+        position: relative;
+        z-index: 1;
+        color: white;
+        top: -110px;
+        font-size: 24px;
+    }
+
+    .column-r {
+      position: relative;
+      z-index: 0;
+      float: center;
+      width: 60%;
+      height: auto;
+      padding: 10px;
+      margin-left: 0px;
+      top: 30px;
+    }
+
+    #grid {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 30% 30% 30%;
+    }
+}
+
+@media only screen and (hover: none) and (pointer: coarse) and (orientation: portrait){
+  .column-r {
+    text-align: center;
+    display: none;
+    float: left;
+  }
+
+  #myCanvas {
+    width: 50%;
+  }
+
+  .btn {
+      height: auto;
+  }
+
+  .btn_img {
+      width: 80%;
+  }
+
+  .column-r {
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    float: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .column-l {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+
+.text_num {
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    color: white;
+    top: -170px;
+    font-size: 32px;
+}
+
+.text_on {
+    position: relative;
+    z-index: 1;
+    color: white;
+    top: -160px;
+    font-size: 32px;
+}
+
+  #grid {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 17% 17% 17%;
+    margin: 20px;
+  }
+}
+
