@@ -2,8 +2,16 @@
 
 Controle des lumières de l'atelier ELO avec un écran tactile, un Raspberry et des module ABB et KNX.
 
-Toutes la documentation ce trouve sur le XWiki:
-[XWiki Controle des lumieres KNX](https://xwiki.serverelo.org/xwiki/bin/view/Centre%20de%20Formation%20ELO/Projets/Controle%20des%20lumières%20KNX/)
+L'interace graphique est un site web, réalisé en Python avec Flask.
+
+![img boitier](https://raw.githubusercontent.com/Forestierr/Controle-lumieres-knx/main/1_Documentation/IMG_WIKI/boitier_complet.png)
+
+
+##
+
+youtube : https://www.youtube.com/channel/UC0hVF6m1WlG9nCOo1_hOlJg
+
+site : [Zappvion](http://www.zappvion.ch)
 
 ## ##
     
